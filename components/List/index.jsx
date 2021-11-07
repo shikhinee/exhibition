@@ -1,5 +1,6 @@
 //Next, React (core node_modules) imports must be placed here
 import Image from 'next/image'
+import Link from 'next/link'
 //import STORE from '@/store'
 
 //Styles must be imported here
@@ -13,6 +14,7 @@ const List = (props) => {
         <div className={styles.container}>
             <div className={styles.row}>
                 <div className={styles.column}>
+                <Link href="/davinci">
                     <div className={styles.img}>     
                         <Image
                             alt="librarycover"
@@ -26,9 +28,10 @@ const List = (props) => {
                         <p>Монголын үндэсний төв номын сангийн 100 жилийн ой</p>
                     </div> 
                     </div>
-
+                    </Link>
                 </div>
                 <div className={styles.column}>
+                <Link href="/davinci">
                     <div className={styles.img}>     
                         <Image
                             alt="librarycover"
@@ -42,8 +45,10 @@ const List = (props) => {
                         <p>Монголын үндэсний төв номын сангийн 100 жилийн ой</p>
                     </div> 
                     </div>
+                    </Link>
                 </div>
                 <div className={styles.column}>
+                <Link href="/davinci">
                     <div className={styles.img}>     
                         <Image
                             alt="librarycover"
@@ -57,10 +62,12 @@ const List = (props) => {
                         <p>Монголын үндэсний төв номын сангийн 100 жилийн ой</p>
                     </div> 
                     </div>
+                    </Link>
                 </div>
             </div>
             <div className={styles.row}>
                 <div className={styles.column}>
+                <Link href="/davinci">
                         <div className={styles.img}>     
                             <Image
                                 alt="librarycover"
@@ -74,6 +81,7 @@ const List = (props) => {
                         <p>Монголын үндэсний төв номын сангийн 100 жилийн ой</p>
                     </div> 
                         </div>
+                        </Link>
                     </div>
             </div>
         </div>
