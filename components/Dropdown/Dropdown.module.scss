@@ -1,0 +1,32 @@
+@import 'global';
+.container {
+  width: min-content;
+  position: relative;  
+  margin-bottom: 1.6rem;
+  &:after {
+    content: '';
+    border-width: 0.8rem;
+    border-style: solid;
+    border-color: transparent;
+    border-left-color: #0b0b0b;
+    display: inline-block;
+    position: absolute;
+    right: 0.1rem;
+    bottom: 2rem;
+    border-radius: 0.2rem;
+  }
+}
+.container select {
+  padding-right: 1rem;
+  appearance: none;
+  padding: 1.8rem;
+  width: max-content;
+  border-radius: 0.5rem;
+  border: 0.2rem;
+  outline: none;
+  font-size: 2rem;
+  @include themify(){
+    background-color: #fec7ca;
+    color: has(clr-text-inverse);
+  }
+}

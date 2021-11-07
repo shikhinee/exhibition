@@ -11,7 +11,7 @@ import "@/sass/app.scss";
 const App = ({ Component, pageProps: { session, ...pageProps } }) => {
   const Layout = Component.Layout ? Component.Layout : Fragment;
   return (
-    <Provider session={session}>
+    // <Provider session={session}>
       <ThemeContextProvider>
         <ThemeLayout>
           {
@@ -21,7 +21,7 @@ const App = ({ Component, pageProps: { session, ...pageProps } }) => {
           }
         </ThemeLayout>
       </ThemeContextProvider>
-    </Provider>
+    // </Provider>
   );
 };
 

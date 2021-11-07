@@ -1,0 +1,45 @@
+@import 'global';
+
+.container {
+    height: min-content;
+    background-color: #0b0b0b;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 100%;
+}
+.row {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 1rem;
+}
+.img{
+    position: relative;
+    width: 400px;
+    height: 200px;
+  
+    img {
+        object-fit: contain;
+        transition: transform 0.3s;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+  }
+  .textContainer {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      padding-left: 5%;
+      padding-bottom: 5%;
+      h4 {
+          margin: 5%;
+          color: #0b0b0b;
+          user-select: none;
+      }
+      p {
+        margin: 5%;
+        color: #efefef;
+      }
+  }
