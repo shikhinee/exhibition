@@ -39,23 +39,47 @@
     padding: 0.2em 0;
   }
   @include respondMax(md) {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 }
 .contentLeft {
   display: flex;
   width: 100%;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   p{
     display: flex;
     flex-direction: column;
+  }
+  @include respondMax(sm) {
+    flex-direction: column;
+  }
+  .web {
+    p {
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
 .contentRight {
   display: flex;
   width: 100%;
-  flex-direction: column;
+  justify-content: space-evenly;
+  @include respondMax(sm) {
+    flex-direction: column;
+  }
+  .strategy {
+    @include respondMax(md) {
+      margin-left: 20%;
+    }
+  }
+  p {
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 .socialContainer {
   display: flex;

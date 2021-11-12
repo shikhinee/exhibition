@@ -1,0 +1,51 @@
+@import 'global';
+
+.slide {
+    padding-left: 10px;
+    min-width: 100%;
+    position: relative;
+  }
+  
+  .slideInner {
+    position: relative;
+    overflow: hidden;
+    height: 190px;
+  }
+  .slideThumb {
+    padding-left: 8px;
+    min-width: 20%;
+  }
+  
+  .slideInnerThumb {
+    touch-action: manipulation;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    width: 100%;
+    background-color: transparent;
+    position: relative;
+    display: block;
+    overflow: hidden;
+  }
+  .slideThumbnail {
+    position: absolute;
+    opacity: 0.2;
+    top: 0;
+    bottom: 0;
+    left: -10000%;
+    right: -10000%;
+    margin: auto;
+    min-width: 1000%;
+    min-height: 1000%;
+    max-width: none;
+    transform: scale(0.1);
+    transition: opacity 0.2s;
+  }
+  
+  .slideThumb .isSelected .slideThumbnail {
+    opacity: 1;
+  }
+  

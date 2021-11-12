@@ -1,5 +1,57 @@
 @import 'global';
 
-.container {
+.embla {
+    position: relative;
+    background-color: #f7f7f7;
+    padding: 20px;
+    max-width: 670px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .emblaViewport {
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .emblaViewport.is-draggable {
+    cursor: move;
+    cursor: grab;
+  }
+  
+  .emblaViewport.is-dragging {
+    cursor: grabbing;
+  }
+  
+  .emblaContainer {
+    display: flex;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    margin-left: -10px;
+  }
+  .slide {
+    padding-left: 10px;
+    min-width: 100%;
+    position: relative;
+  }
 
-}
+  .slideInner {
+    position: relative;
+    overflow: hidden;
+    height: 190px;
+  }
+  
+  .slideImg {
+    display: block;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    min-height: 100%;
+    min-width: 100%;
+    max-width: none;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.2s ease-in-out;
+  }

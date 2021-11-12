@@ -28,8 +28,9 @@ const Tasks = (props) => {
 				Voluptas aperiam laudantium optio assumenda numquam quisquam porro nemo reiciendis sint impedit illum corporis, ab, cupiditate ullam officiis! Consequuntur possimus perspiciatis iste dolores! Explicabo ut deserunt in doloribus, voluptatum ipsum!
 				Facilis excepturi neque labore cum cupiditate voluptate voluptatum debitis molestias nostrum sapiente? Minima saepe est esse ut odit. Fugiat at pariatur laudantium assumenda ut veritatis, voluptatem ea placeat ullam delectus.
 				Placeat distinctio ipsam non quisquam ea laudantium culpa illo? Repudiandae incidunt maiores molestiae. Ducimus illo, sint doloribus fuga inventore sed est optio aliquid repellendus reprehenderit vel pariatur? Recusandae, ipsam odit!</p>
+				<div><List /></div>
 			</div>
-			<div><List /></div>
+			
 		 </div>
 	)
 };

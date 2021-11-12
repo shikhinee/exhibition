@@ -9,6 +9,7 @@
     width: 100%;
     word-spacing: 0;
     justify-content: center;
+    align-items: center;
   }
   .img{
     position: relative;
@@ -21,7 +22,8 @@
     }
   }
   .textContainer {
-      position: absolute;
+      width: 100%;
+      max-width: has(lg);
       left: 0;
       bottom: 0;
       padding-left: 3rem;

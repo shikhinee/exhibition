@@ -3,17 +3,18 @@
 .container {
     width: 100%;
     // max-width: 102.4rem;
-    max-width: has(lg);
     // max-width: 64em;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 .containerDescription {
     display: flex;
     flex-direction: column;
     width: 100%;
-    justify-content: space-between;
+    max-width: has(lg);
+    justify-content: center;
     p {
         margin: 2rem;
         color: #0b0b0b;
@@ -21,4 +22,5 @@
 }
 .containerCover {
     width: 100%;
+    
     }
