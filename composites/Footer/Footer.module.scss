@@ -1,0 +1,99 @@
+@import "global";
+
+.container {
+  display: flex;
+  width: 100%;
+  background-color: #222831;
+  justify-content: center;
+  padding-top: 3em;
+  h1 {
+    padding: 1.5em 0;
+    text-transform: none;
+    color: $clr-neutral-8;
+    letter-spacing: 0;
+    font-size: 2em;
+    @include respondMax(md) {
+      font-size: 1.5em;
+    }
+  }
+}
+.content {
+  width: 90%;
+  max-width: map-get($map: $breakpoints, $key: md);
+  display: flex;
+  flex-direction: column;
+  h2 {
+    letter-spacing: normal;
+    padding: 0.5em 0;
+    font-size: 1.2em;
+  }
+  hr{
+    width: 100%;
+  }
+}
+.contentTop{
+  display: flex;
+  padding: 2em 0;
+  p{
+    color: $clr-neutral-8;
+    padding: 0.2em 0;
+  }
+  @include respondMax(md) {
+    flex-direction: column-reverse;
+  }
+}
+.contentLeft {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  p{
+    display: flex;
+    flex-direction: column;
+  }
+}
+.contentRight {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.socialContainer {
+  display: flex;
+  margin: 2em 0;
+}
+.webDesign {
+  display: flex;
+  @include respondMax(md) {
+    flex-direction: column;
+  }
+}
+.design, .web, .strategy {
+  margin-right: 1em;
+}
+.legal {
+  display: flex;
+  justify-content: space-between;
+  padding: 3em 0;
+  span {
+    cursor: pointer;
+    color: $clr-neutral-7;
+    &:not(:first-of-type) {
+      margin-left: 1em;
+    }
+    &:hover {
+      color: $clr-neutral-5;
+    }
+  }
+  p,span {
+    color: $clr-neutral-6;
+  }
+  @include respondMax(md) {
+    font-size: 0.8em;
+  }
+}
+
+.legalLeft {
+  @include respondMax(md) {
+    margin-bottom: 3em;
+  }
+}

@@ -19,7 +19,7 @@ const Cover = (props) => {
                 /> 
             </div>
             <div className={styles.textContainer}>
-                <h1>Номын Баяр</h1>
+                <h2>Номын Баяр</h2>
                 <p>Монголын үндэсний төв номын сангийн 100 жилийн ой</p>
             </div> 
         </div>

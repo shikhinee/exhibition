@@ -8,6 +8,7 @@
 
 //import COMPOSITES from '@/composites'
 import Navbar from '@/composites/Navbar';
+import Footer from '@/composites/Footer';
 //import COMPONENT from '@/components'
 
 import styles from './Root.module.scss'
@@ -17,6 +18,7 @@ const RootLayout = ({children, ...props}) => {
 		 <div className={styles.container}>
 			 <Navbar />
 			{children}
+			<Footer />
 		</div>
 	)
 };

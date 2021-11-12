@@ -31,7 +31,7 @@ const List = (props) => {
                     </Link>
                 </div>
                 <div className={styles.column}>
-                <Link href="/davinci">
+                <Link href="/picasso">
                     <div className={styles.img}>     
                         <Image
                             alt="librarycover"
@@ -48,7 +48,7 @@ const List = (props) => {
                     </Link>
                 </div>
                 <div className={styles.column}>
-                <Link href="/davinci">
+                <Link href="/schiele">
                     <div className={styles.img}>     
                         <Image
                             alt="librarycover"
@@ -67,7 +67,7 @@ const List = (props) => {
             </div>
             <div className={styles.row}>
                 <div className={styles.column}>
-                <Link href="/davinci">
+                <Link href="/librarycover">
                         <div className={styles.img}>     
                             <Image
                                 alt="librarycover"
