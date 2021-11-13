@@ -1,6 +1,6 @@
 import RootLayout from "@/layouts/Root";
 import styles from "./Root.module.scss";
-import Tasks from "@/views/Home/Tasks"
+import Exhibition from "@/views/Home/Exhibition"
 import Carousel from "@/components/Carousel"
 const Davinci = (props) => {
   const SLIDE_COUNT = 5;
@@ -8,7 +8,7 @@ const Davinci = (props) => {
   return (
     <RootLayout>
     <main className={styles.container}>
-      <Tasks/>
+      <Exhibition/>
       <Carousel slides={slides}/>
     </main>
     </RootLayout>

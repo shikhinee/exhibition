@@ -1,13 +1,12 @@
-import ThemeToggler from "@/components/ThemeToggler";
 import RootLayout from "@/layouts/Root";
 import styles from "./Root.module.scss";
-import Landing from "@/views/Home/Landing"
+import Exhibition from "@/views/Home/Landing"
 
 const RootPage = (props) => {
   return (
     <RootLayout>
     <main className={styles.container}>
-      <Landing/>
+      <Exhibition/>
     </main>
     </RootLayout>
   );

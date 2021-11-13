@@ -3,7 +3,9 @@
 .container {
   display: flex;
   width: 100%;
-  background-color: #222831;
+  @include themify(){
+    background-color: has(clr-bg);
+  }
   justify-content: center;
   padding-top: 3em;
   h1 {
@@ -35,7 +37,9 @@
   display: flex;
   padding: 2em 0;
   p{
-    color: $clr-neutral-8;
+    @include themify(){
+      color: has(clr-text);
+    }
     padding: 0.2em 0;
   }
   @include respondMax(md) {
@@ -73,6 +77,9 @@
     @include respondMax(md) {
       margin-left: 20%;
     }
+    @include respondMax(sm) {
+      margin-left: 0;
+        }
   }
   p {
     cursor: pointer;

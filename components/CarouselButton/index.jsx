@@ -1,4 +1,5 @@
 import styles from "./CarouselButton.module.scss"
+
 export const PrevButton = ({ enabled, onClick }) => (
 	<button
 	  className={styles.buttonPrev}

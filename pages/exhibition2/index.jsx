@@ -1,12 +1,12 @@
 import RootLayout from "@/layouts/Root";
 import styles from "./Root.module.scss";
-import Tasks from "@/views/Home/Tasks"
+import Exhibition from "@/views/Home/Landing"
 
 const RootPage = (props) => {
   return (
     <RootLayout>
     <main className={styles.container}>
-      <Tasks/>
+      <Exhibition/>
     </main>
     </RootLayout>
   );

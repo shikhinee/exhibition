@@ -4,24 +4,26 @@ import Image from 'next/image'
 
 //Styles must be imported here
 import styles from './Cover.module.scss'
-import librarycover from "@/public/librarycover.jpeg"
+import cover from "@/public/cover.jpg"
 
 const Cover = (props) => {
     return (
         <div className={styles.container}>
             <div className={styles.img}>     
                 <Image
-                    alt="librarycover"
-                    src={librarycover}
+                    alt="cover"
+                    src={cover}
                     layout="fill"
                     objectFit="cover"
                     quality={100}
                 /> 
             </div>
+            <div className={styles.shadow}>
             <div className={styles.textContainer}>
-                <h2>Номын Баяр</h2>
-                <p>Монголын үндэсний төв номын сангийн 100 жилийн ой</p>
+                <h1>Оюуны оxь</h1>
+                <h2>Цахим үзэсгэлэн</h2>
             </div> 
+            </div>
         </div>
     )
 };

@@ -14,7 +14,8 @@ const List = (props) => {
         <div className={styles.container}>
             <div className={styles.row}>
                 <div className={styles.column}>
-                <Link href="/davinci">
+                <Link href="/exhibition1">
+                    <div className={styles.shadow}>
                     <div className={styles.img}>     
                         <Image
                             alt="librarycover"
@@ -24,14 +25,14 @@ const List = (props) => {
                             quality={100}
                         /> 
                     <div className={styles.textContainer}>
-                        <h4>Номын Баяр</h4>
-                        <p>Монголын үндэсний төв номын сангийн 100 жилийн ой</p>
+                        <h4>Гар бичмэл болон барын бүтээлийн дээжээс</h4>
                     </div> 
+                    </div>
                     </div>
                     </Link>
                 </div>
                 <div className={styles.column}>
-                <Link href="/picasso">
+                <Link href="/exhibition2">
                     <div className={styles.img}>     
                         <Image
                             alt="librarycover"
@@ -41,14 +42,13 @@ const List = (props) => {
                             quality={100}
                         /> 
                        <div className={styles.textContainer}>
-                        <h4>Номын Баяр</h4>
-                        <p>Монголын үндэсний төв номын сангийн 100 жилийн ой</p>
+                        <h4>Эрдэнэсээр урласан бүтээлийн дээжээс</h4>
                     </div> 
                     </div>
                     </Link>
                 </div>
                 <div className={styles.column}>
-                <Link href="/schiele">
+                <Link href="/exhibition3">
                     <div className={styles.img}>     
                         <Image
                             alt="librarycover"
@@ -58,16 +58,15 @@ const List = (props) => {
                             quality={100}
                         /> 
                         <div className={styles.textContainer}>
-                        <h4>Номын Баяр</h4>
-                        <p>Монголын үндэсний төв номын сангийн 100 жилийн ой</p>
+                        <h4>Хамгийн содон бүтээлийн дээжээс</h4>
                     </div> 
                     </div>
                     </Link>
                 </div>
             </div>
             <div className={styles.row}>
-                <div className={styles.column}>
-                <Link href="/librarycover">
+            <div className={styles.column}>
+                <Link href="/exhibition4">
                         <div className={styles.img}>     
                             <Image
                                 alt="librarycover"
@@ -77,12 +76,27 @@ const List = (props) => {
                                 quality={100}
                             /> 
                         <div className={styles.textContainer}>
-                        <h4>Номын Баяр</h4>
-                        <p>Монголын үндэсний төв номын сангийн 100 жилийн ой</p>
+                        <h4>Ном бичгийн хэрэглэгдэхүүн</h4>
                     </div> 
                         </div>
                                             </Link>
                     </div>
+            <div className={styles.column}>
+                <Link href="/exhibition5">
+                    <div className={styles.img}>
+                        <Image
+                            alt="librarycover"
+                            src={schiele}
+                            layout="fill"
+                            objectFit="cover"
+                            quality={100}
+                        /> 
+                        <div className={styles.textContainer}>
+                        <h4>Үсэг бичгийн дурсгалууд</h4>
+                        </div> 
+                        </div>
+                    </Link>
+                </div>
             </div>
         </div>
     )
