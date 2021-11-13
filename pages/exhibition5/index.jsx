@@ -1,5 +1,5 @@
 import RootLayout from "@/layouts/Root";
-import styles from "./Root.module.scss";
+import styles from "./exhibition5.module.scss";
 import Exhibition from "@/views/Home/Landing"
 
 const RootPage = (props) => {
