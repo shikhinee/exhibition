@@ -1,4 +1,4 @@
-@import 'global';
+@import "global";
 
 .container {
     width: 100%;
@@ -8,6 +8,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.containerCover {
+    width: 100%;
 }
 .containerDescription {
     display: flex;
@@ -21,11 +24,8 @@
     }
     @include respondMax(md) {
         flex-direction: column;
-      }
-}
-.containerCover {
-    width: 100%;
     }
+}
 .text {
     padding: 8rem;
     @include respondMax(md) {
@@ -39,14 +39,14 @@
     align-items: center;
 }
 .img {
-        position: relative;
-        width: 320px;
-        height: 320px;
-        margin: 8rem;
-        @include respondMax(md) {
-            margin: 0rem;     
-        }
-        img {
-            object-fit: cover;
-        }
-      }
+    position: relative;
+    width: 320px;
+    height: 320px;
+    margin: 8rem;
+    @include respondMax(md) {
+        margin: 0rem;
+    }
+    img {
+        object-fit: cover;
+    }
+}

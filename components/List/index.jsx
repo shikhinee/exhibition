@@ -25,7 +25,7 @@ const List = (props) => {
                             quality={100}
                         /> 
                     <div className={styles.textContainer}>
-                        <h4>Гар бичмэл болон барын бүтээлийн дээжээс</h4>
+                        <h4>СУРВАЛЖ БИЧГИЙН ДЭЭЖИС</h4>
                     </div> 
                     </div>
                     </div>
@@ -42,7 +42,7 @@ const List = (props) => {
                             quality={100}
                         /> 
                        <div className={styles.textContainer}>
-                        <h4>Эрдэнэсээр урласан бүтээлийн дээжээс</h4>
+                        <h4>ЭРДЭНЭСЭЭР УРЛАСАН БҮТЭЭЛИЙН ДЭЭЖИС</h4>
                     </div> 
                     </div>
                     </Link>
@@ -58,7 +58,7 @@ const List = (props) => {
                             quality={100}
                         /> 
                         <div className={styles.textContainer}>
-                        <h4>Хамгийн содон бүтээлийн дээжээс</h4>
+                        <h4>ОНЦГОЙ БҮТЭЭЛИЙН ДЭЭЖИС</h4>
                     </div> 
                     </div>
                     </Link>
@@ -76,7 +76,7 @@ const List = (props) => {
                                 quality={100}
                             /> 
                         <div className={styles.textContainer}>
-                        <h4>Ном бичгийн хэрэглэгдэхүүн</h4>
+                        <h4>МОНГОЛЧУУДЫН БИЧИГ ҮСГИЙН ДУРСГАЛ</h4>
                     </div> 
                         </div>
                                             </Link>
@@ -92,7 +92,7 @@ const List = (props) => {
                             quality={100}
                         /> 
                         <div className={styles.textContainer}>
-                        <h4>Үсэг бичгийн дурсгалууд</h4>
+                        <h4>УЛАМЖЛАЛТ БИЧГИЙН ХЭРЭГЛЭГДЭХҮҮН</h4>
                         </div> 
                         </div>
                     </Link>

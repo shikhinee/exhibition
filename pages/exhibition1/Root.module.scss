@@ -4,5 +4,43 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #efefef;
+    background-color: has(clr-bg);
+}
+.containerDescription {
+    display: flex;
+    width: 100%;
+    max-width: has(md);
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    p {
+        color: #0b0b0b;
+    }
+    @include respondMax(md) {
+        flex-direction: column;
+    }
+}
+.text {
+    padding: 8rem;
+    @include respondMax(md) {
+        padding: 5rem;
+    }
+}
+.imgContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    margin: 8rem;
+    @include respondMax(md) {
+        margin: 0rem;
+    }
+    img {
+        object-fit: cover;
+    }
 }
