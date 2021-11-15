@@ -4,17 +4,17 @@ import Image from 'next/image'
 
 //Styles must be imported here
 import styles from './Cover.module.scss'
-import cover from "@/public/Cover.jpg"
+import cover from '@/public/Cover.jpg'
 
 const Cover = (props) => {
     return (
         <div className={styles.container}>
             <div className={styles.img}>     
                 <Image
-                    alt="cover"
+                    alt='cover'
                     src={cover}
-                    layout="fill"
-                    objectFit="cover"
+                    layout='fill'
+                    objectFit='cover'
                     quality={100}
                 /> 
             </div>
