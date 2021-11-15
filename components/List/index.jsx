@@ -5,10 +5,12 @@ import Link from 'next/link'
 
 //Styles must be imported here
 import styles from './List.module.scss'
-import librarycover from '@/public/librarycover.jpeg'
-import picasso from '@/public/picasso.jpeg'
-import schiele from '@/public/schiele.jpeg'
-import davinci from '@/public/davinci.jpeg'
+import cover1 from '@/public/Cover1.jpg'
+import cover2 from '@/public/Cover2.jpg'
+import cover3 from '@/public/Cover3.jpg'
+import cover4 from '@/public/Cover4.jpg'
+import cover5 from '@/public/Cover5.jpg'
+
 const List = (props) => {
     return (
         <div className={styles.container}>
@@ -19,13 +21,12 @@ const List = (props) => {
                     <div className={styles.img}>     
                         <Image
                             alt="librarycover"
-                            src={librarycover}
+                            src={cover1}
                             layout="fill"
                             objectFit="cover"
                             quality={100}
                         /> 
                     <div className={styles.textContainer}>
-                        <h4>СУРВАЛЖ БИЧГИЙН ДЭЭЖИС</h4>
                     </div> 
                     </div>
                     </div>
@@ -36,13 +37,12 @@ const List = (props) => {
                     <div className={styles.img}>     
                         <Image
                             alt="librarycover"
-                            src={picasso}
+                            src={cover2}
                             layout="fill"
                             objectFit="cover"
                             quality={100}
                         /> 
                        <div className={styles.textContainer}>
-                        <h4>ЭРДЭНЭСЭЭР УРЛАСАН БҮТЭЭЛИЙН ДЭЭЖИС</h4>
                     </div> 
                     </div>
                     </Link>
@@ -52,13 +52,12 @@ const List = (props) => {
                     <div className={styles.img}>     
                         <Image
                             alt="librarycover"
-                            src={schiele}
+                            src={cover3}
                             layout="fill"
                             objectFit="cover"
                             quality={100}
                         /> 
                         <div className={styles.textContainer}>
-                        <h4>ОНЦГОЙ БҮТЭЭЛИЙН ДЭЭЖИС</h4>
                     </div> 
                     </div>
                     </Link>
@@ -70,13 +69,12 @@ const List = (props) => {
                         <div className={styles.img}>     
                             <Image
                                 alt="librarycover"
-                                src={davinci}
+                                src={cover4}
                                 layout="fill"
                                 objectFit="cover"
                                 quality={100}
                             /> 
                         <div className={styles.textContainer}>
-                        <h4>МОНГОЛЧУУДЫН БИЧИГ ҮСГИЙН ДУРСГАЛ</h4>
                     </div> 
                         </div>
                                             </Link>
@@ -86,13 +84,12 @@ const List = (props) => {
                     <div className={styles.img}>
                         <Image
                             alt="librarycover"
-                            src={schiele}
+                            src={cover5}
                             layout="fill"
                             objectFit="cover"
                             quality={100}
                         /> 
                         <div className={styles.textContainer}>
-                        <h4>УЛАМЖЛАЛТ БИЧГИЙН ХЭРЭГЛЭГДЭХҮҮН</h4>
                         </div> 
                         </div>
                     </Link>

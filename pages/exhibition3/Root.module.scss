@@ -4,8 +4,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #efefef;
-}
+    @include themify(){
+        background-color: has(bg);
+    }}
 .containerDescription {
     display: flex;
     width: 100%;
@@ -14,8 +15,9 @@
     align-items: center;
     background-color: #ffffff;
     p {
-        color: #0b0b0b;
-    }
+        @include themify(){
+            color: has(clr-bg-inverse)
+        }    }
     @include respondMax(md) {
         flex-direction: column;
     }

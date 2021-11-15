@@ -12,9 +12,13 @@
     max-width: has(md);
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
+    @include themify(){
+        background-color: has(clr-bg);
+    }
     p {
-        color: #0b0b0b;
+        @include themify(){
+            color: has(clr-bg-inverse)
+        }
     }
     @include respondMax(md) {
         flex-direction: column;

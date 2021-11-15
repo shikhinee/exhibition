@@ -15,7 +15,7 @@ const Landing = (props) => {
 			 <div className={styles.containerCover}>
 			 <Cover/>
 			 </div>
-			<div className={styles.containerDescription}>			 
+			{/* <div className={styles.containerDescription}>			 
 				<div className={styles.text}>
 				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis dolor explicabo praesentium quaerat placeat, dicta impedit numquam, eos nobis beatae laudantium sit ab! Voluptatem, amet. Distinctio quod optio natus ipsam?
 				Doloribus veritatis ipsum rerum voluptatum debitis facilis cupiditate maiores excepturi tempora numquam? Suscipit, corrupti fugit nihil alias dignissimos nisi eum in soluta maxime, officiis, molestiae recusandae culpa beatae esse officia.
@@ -32,8 +32,8 @@ const Landing = (props) => {
                     quality={100}
                 /> 
             	</div>
-			</div>
-			<div><List /></div>
+			</div> */}
+			<div className={styles.background}><List /></div>
 		 </div>
 	)
 };

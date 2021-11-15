@@ -78,8 +78,8 @@
   .image{
     position: relative;
     margin-bottom: 1em;
-    width: 800px;
-    height: 500px;
+    width: 1000px;
+    height: auto;
     img {
         object-fit: contain;
     }
@@ -91,7 +91,7 @@
   height: auto;
   justify-content: flex-start;
   align-items: center;
-  margin: 2rem;
+  padding: 2rem;
   @include respondMax(md){
     width: 100%;
     margin: 0;

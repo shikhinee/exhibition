@@ -1,5 +1,5 @@
 //Next, React (core node_modules) imports must be placed here
-
+import Image from "next/image"
 //import STORE from '@/store'
 
 import styles from './CarouselThumb.module.scss'
@@ -16,7 +16,7 @@ const CarouselThumb = ({ selected, onClick, imgSrc }) => {
       className={`${styles.slideInner} ${styles.slideInnerThumb}`}
       type="button"
     >
-      <img className={styles.slideThumbnail} src={imgSrc} alt="A cool cat." />
+      <Image className={styles.slideThumbnail} src={imgSrc} alt="A cool cat." />
     </button>
   </div>
 	)

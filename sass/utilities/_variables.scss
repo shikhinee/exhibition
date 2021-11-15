@@ -28,6 +28,7 @@ $clr-neutral-5: #7a7e83;
 $clr-neutral-6: #919498;
 $clr-neutral-7: #d2d3d3;
 $clr-neutral-8: #efefef;
+$clr-neutral-9: #ffffff;
 
 // THEMES
 $themes: (
@@ -47,7 +48,7 @@ $themes: (
   ),
   light: (
     clr-select: #000,
-    clr-bg: $clr-neutral-8,
+    clr-bg: $clr-neutral-9,
     clr-bg-inverse: $clr-neutral-1,
     clr-h1: $clr-primary,
     clr-h2: $clr-secondary,
