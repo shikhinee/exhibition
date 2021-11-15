@@ -3,7 +3,7 @@ import RootLayout from '@/layouts/Root';
 import styles from './Root.module.scss';
 import Carousel from '@/components/Carousel'
 import Titles from '@/components/Titles'
-import Cover from '@/components/Cover1'
+import Cover1 from '@/components/Cover1'
 
 const Davinci = (props) => {
   const SLIDE_COUNT = 10;
@@ -11,7 +11,7 @@ const Davinci = (props) => {
   return (
     <RootLayout>
     <main className={styles.container}>
-      <Cover/>
+      <Cover1/>
       <div className={styles.containerDescription}>			 
 				<div className={styles.text}>
           <h2>I. СУРВАЛЖ БИЧГИЙН ДЭЭЖИС</h2>

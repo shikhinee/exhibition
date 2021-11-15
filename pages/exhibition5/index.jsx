@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import RootLayout from '@/layouts/Root';
 import styles from './exhibition5.module.scss';
-import Cover from '@/components/Cover5'
+import Cover5 from '@/components/Cover5'
 import Carousel from '@/components/Carousel'
 import Titles from '@/components/Titles'
 const Davinci = (props) => {
@@ -10,7 +10,7 @@ const Davinci = (props) => {
   return (
     <RootLayout>
     <main className={styles.container}>
-      <Cover/>
+      <Cover5/>
       <div className={styles.containerDescription}>			 
 				<div className={styles.text}>
           <h2>УЛАМЖЛАЛТ БИЧГИЙН ХЭРЭГЛЭГДЭХҮҮН</h2>

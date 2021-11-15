@@ -3,14 +3,14 @@ import RootLayout from '@/layouts/Root';
 import styles from './Root.module.scss';
 import Carousel from '@/components/Carousel'
 import Titles from '@/components/Titles'
-import Cover from '@/components/Cover2'
+import Cover2 from '@/components/Cover2'
 const Davinci = (props) => {
   const SLIDE_COUNT = 9;
   const slides = Array.from(Array(SLIDE_COUNT).keys());
   return (
     <RootLayout>
     <main className={styles.container}>
-      <Cover/>
+      <Cover2/>
       <div className={styles.containerDescription}>			 
 				<div className={styles.text}>
           <h2>II.  ЭРДЭНЭСЭЭР УРЛАСАН БҮТЭЭЛИЙН ДЭЭЖИС</h2>

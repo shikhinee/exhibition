@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import RootLayout from '@/layouts/Root';
 import styles from './Root.module.scss';
-import Cover from '@/components/Cover3'
+import Cover3 from '@/components/Cover3'
 import Carousel from '@/components/Carousel'
 import Titles from '@/components/Titles'
 const Davinci = (props) => {
@@ -10,7 +10,7 @@ const Davinci = (props) => {
   return (
     <RootLayout>
     <main className={styles.container}>
-      <Cover/>
+      <Cover3/>
       <div className={styles.containerDescription}>			 
 				<div className={styles.text}>
           <h2>III. ОНЦГОЙ БҮТЭЭЛИЙН ДЭЭЖИС</h2>

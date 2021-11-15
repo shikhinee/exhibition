@@ -4,9 +4,9 @@ import Image from 'next/image'
 
 //Styles must be imported here
 import styles from './Cover.module.scss'
-import cover from "@/public/Cover4.jpg"
+import cover from "@/public/cover4.jpg"
 
-const Cover = (props) => {
+const Cover4 = (props) => {
     return (
         <div className={styles.container}>
             <div className={styles.img}>     
@@ -28,4 +28,4 @@ const Cover = (props) => {
     )
 };
 
-export default Cover;
+export default Cover4;
