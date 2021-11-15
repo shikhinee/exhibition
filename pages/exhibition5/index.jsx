@@ -1,9 +1,9 @@
 import Image from 'next/image'
-import RootLayout from "@/layouts/Root";
-import styles from "./exhibition5.module.scss";
-import Cover from "@/components/Cover5"
-import Carousel from "@/components/Carousel"
-import Titles from "@/components/Titles"
+import RootLayout from '@/layouts/Root';
+import styles from './exhibition5.module.scss';
+import Cover from '@/components/Cover5'
+import Carousel from '@/components/Carousel'
+import Titles from '@/components/Titles'
 const Davinci = (props) => {
   const SLIDE_COUNT = 9;
   const slides = Array.from(Array(SLIDE_COUNT).keys());
@@ -27,7 +27,7 @@ const Davinci = (props) => {
 				<div className={styles.imgContainer}>
 				<div className={styles.img}>     
                 <Image
-                    alt="cover"
+                    alt='cover'
                     src={Titles[4].image}
                     layout= 'fill'
                     objectFit='contain'

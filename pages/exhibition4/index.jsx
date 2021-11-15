@@ -1,9 +1,9 @@
 import Image from 'next/image'
-import RootLayout from "@/layouts/Root";
-import styles from "./Root.module.scss";
-import Cover from "@/components/Cover4"
-import Carousel from "@/components/Carousel"
-import Titles from "@/components/Titles"
+import RootLayout from '@/layouts/Root';
+import styles from './Root.module.scss';
+import Cover from '@/components/Cover4'
+import Carousel from '@/components/Carousel'
+import Titles from '@/components/Titles'
 const Davinci = (props) => {
   const SLIDE_COUNT = 6;
   const slides = Array.from(Array(SLIDE_COUNT).keys());
@@ -19,12 +19,12 @@ const Davinci = (props) => {
           <p>3. Буянт хан хөвгүүний намтар /вагиндра үсгээр/</p>
           <p>4. Хэвтээ дөрвөлжин үсэг</p>
           <p>5. Галиг үсэг оршвой /али гали үсгээр/ </p>
-          <p>6. Дөрвөлжин үсгийн дурсгал</p>
+          <p>6. Дөрвөлжин үсгийн дурсга</p>
 				</div>
 				<div className={styles.imgContainer}>
 				<div className={styles.img}>     
                 <Image
-                    alt="cover"
+                    alt='cover'
                     src={Titles[3].image}
                     layout= 'fill'
                     objectFit='contain'
