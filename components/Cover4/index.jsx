@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 //Styles must be imported here
 import styles from './Cover.module.scss'
-import cover from "@/public/cover4.jpg"
+import cover from "@/public/Cover4.jpg"
 
 const Cover4 = (props) => {
     return (

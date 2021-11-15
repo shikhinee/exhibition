@@ -3,69 +3,41 @@ import Image from 'next/image'
 import { useState, useEffect, useCallback, useRef } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { PrevButton, NextButton } from "@/components/CarouselButton";
-import { mediaByIndex, length } from "@/components/Media";
+import { mediaByIndex, length, photoLength } from "@/components/Media";
 import { useNestedEmblaCarousel } from "@/components/NestedCarousel";
-import librarycover from "@/public/librarycover.jpeg"
 import CarouselThumb from "@/components/CarouselThumb"
+import InnerCarousel from "@/components/InnerCarousel"
 //import STORE from '@/store'
 
 import styles from './Carousel.module.scss'
-import { indexOf } from 'lodash';
 
-// const NestedCarousel = ({ slides, setLockParentScroll }) => {
-// 	const [viewportRef, embla] = useEmblaCarousel();
+const Carousel = ({ slides }, props) => {
 
-// 	useEffect(() => {
-// 		if (!embla) return;
-// 		embla.on("pointerDown", () => setLockParentScroll(true));
-// 		embla.on("pointerUp", () => setLockParentScroll(false));
-// 	}, [embla, setLockParentScroll]);
-// 	console.log(mediaByIndex)
 
-// 	return (
-// 		<div className={styles.embla}>
-// 			<div className={styles.emblaViewport} ref={viewportRef}>
-// 				<div className={styles.emblaContainer}>
-// 					{slides.map((index) => (
-// 						<div className={styles.slide} key={index}>
-// 							<div className={styles.slideInner}>
-// 								<div className={styles.slideImg}>
-// 									<div className={styles.image}>
-									// <Image
-									// 	layout='intrinsic'
-									// 	src={mediaByIndex(index).image}
-									// 	alt="A cool cat."
-									// />
-// 									</div>
-// 								</div>
-// 							</div>
-// 						</div>
-// 					))}
-// 				</div>
-// 			</div>
-// 		</div>
-// 	);
-// };
-
-const Carousel = ({ slides }) => {
 	const [viewportRef, embla] = useEmblaCarousel();
 	const setLockParentScroll = useNestedEmblaCarousel(embla);
 	const [prevBtnEnabled, setPrevBtnEnabled] = useState(false);
 	const [nextBtnEnabled, setNextBtnEnabled] = useState(false);
+	const [selectedIndex, setSelectedIndex] = useState(0);
+	const [scrollSnaps, setScrollSnaps] = useState([]);
 	const scrollPrev = useCallback(() => embla && embla.scrollPrev(), [embla]);
 	const scrollNext = useCallback(() => embla && embla.scrollNext(), [embla]);
+	const scrollTo = useCallback((index) => embla && embla.scrollTo(index), [
+    embla
+  ]);
 	const onSelect = useCallback(() => {
 		if (!embla) return;
+		setSelectedIndex(embla.selectedScrollSnap());
 		setPrevBtnEnabled(embla.canScrollPrev());
 		setNextBtnEnabled(embla.canScrollNext());
-	}, [embla]);
-
+	}, [embla, setSelectedIndex]);
+	console.log(selectedIndex)
 	useEffect(() => {
 		if (!embla) return;
+		setScrollSnaps(embla.scrollSnapList());
 		embla.on("select", onSelect);
 		onSelect();
 	}, [embla, onSelect]);
-
 	return (
 		<div className={styles.embla}>
 			<div className={styles.emblaViewport} ref={viewportRef}>
@@ -75,10 +47,10 @@ const Carousel = ({ slides }) => {
 							<div className={styles.slideInner}>
 								<div className={styles.slideImg}>
 									<div className={styles.image}>
-									<Image
-										layout='intrinsic'
-										src={mediaByIndex(index).image}
-										alt="A cool cat."
+									<InnerCarousel
+										// photos={photos}
+										setLockParentScroll={setLockParentScroll}
+										count={selectedIndex}
 									/>
 									</div>
 								</div>
@@ -86,11 +58,6 @@ const Carousel = ({ slides }) => {
 
 
 							<div className={styles.slideOuter}>
-								<div className={styles.navButton}>
-									<PrevButton onClick={scrollPrev} enabled={prevBtnEnabled} />
-									<p>{index + 1} of {length}</p>
-									<NextButton onClick={scrollNext} enabled={nextBtnEnabled} />
-								</div>
 								<div className={styles.text}>
 									<div className={styles.textDesc}>
 										<h4>{mediaByIndex(index).title}</h4>
@@ -111,6 +78,11 @@ const Carousel = ({ slides }) => {
 
 					))}
 				</div>
+												<div className={styles.navButton}>
+									<PrevButton onClick={scrollPrev} enabled={prevBtnEnabled} />
+									<p>{selectedIndex + 1} of {length}</p>
+									<NextButton onClick={scrollNext} enabled={nextBtnEnabled} />
+								</div>
 			</div>
 		</div>
 	);

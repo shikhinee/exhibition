@@ -34,8 +34,6 @@
   }
   .slide {
     display: flex;
-    justify-content: center;
-    align-items: center;
     min-width: 100%;
     position: relative;
     @include respondMax(md){
@@ -71,7 +69,7 @@
     height: 100%;
     @include respondMax(md){
       flex-direction: row;
-      width: 90%;
+      width: 100%;
     }
     @include respondMax(sm){
       flex-direction: column;
@@ -89,7 +87,7 @@
 .slideOuter {
   display: flex;
   flex-direction: column;
-  width: 50rem;
+  width: min-content;
   height: auto;
   justify-content: flex-start;
   align-items: center;
@@ -111,7 +109,6 @@
 .scriptWidth {
   display: flex;
   justify-content: center;
-  align-items:center;
   width: 100%;
 }
 .scriptImg{
