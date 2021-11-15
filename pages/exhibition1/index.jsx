@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import RootLayout from "@/layouts/Root";
 import styles from "./Root.module.scss";
-import Exhibition from "@/views/Home/Exhibition"
 import Carousel from "@/components/Carousel"
 import Titles from "@/components/Titles"
 import Cover from '@/components/Cover1'
