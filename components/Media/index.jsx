@@ -3,7 +3,7 @@
 //import STORE from '@/store'
 
 
-import media1 from "@/public/JalzeTembanGanjuur1.png";
+import media1 from "@/public/Jalzetembanganjuur1.png";
 import media2 from "@/public/altantovch.png";
 import media3 from "@/public/hurdenzurgiinbichmel.png";
 import media4 from "@/public/asragchnertiintuuh.png";
