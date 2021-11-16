@@ -16,7 +16,10 @@ const CarouselThumb = ({ selected, onClick, imgSrc }) => {
       className={`${styles.slideInner} ${styles.slideInnerThumb}`}
       type="button"
     >
+      <div className={styles.image}>
       <Image className={styles.slideThumbnail} src={imgSrc} alt="A cool cat." />
+      <div>Image</div>
+      </div>
     </button>
   </div>
 	)

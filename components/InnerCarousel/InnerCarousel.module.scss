@@ -24,7 +24,21 @@
   .emblaViewport.is-dragging {
     cursor: grabbing;
   }
-  
+  .emblThumb {
+    position: relative;
+    @include themify(){
+      background-color: has(clr-bg);
+    }
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0;
+    margin-top: -12px;
+  }
+  .emblaContainerThumb {
+    cursor: default;
+    margin-left: -8px;
+  }
   .emblaContainer {
     display: flex;
     user-select: none;

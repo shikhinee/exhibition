@@ -48,4 +48,12 @@
   .slideThumb .isSelected .slideThumbnail {
     opacity: 1;
   }
-  
+  .image{
+    position: relative;
+    margin-bottom: 1em;
+    width: 1000px;
+    height: auto;
+    img {
+        object-fit: contain;
+    }
+  }

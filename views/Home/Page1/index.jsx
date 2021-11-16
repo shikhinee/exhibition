@@ -8,8 +8,15 @@ import cover1 from '@/public/cover1.jpg'
 
 //import COMPONENT from '@/components'
 import styles from './Exhibition1.module.scss'
+import {mediablabla} from '@/components/Media'
 
 const Page1 = (props) => {
+
+	const photos = (selectedIndex) => {
+		// console.log(selectedIndex)
+		return Array.from(Array(2).keys());
+	}
+
 	const SLIDE_COUNT = 10;
 	const slides = Array.from(Array(SLIDE_COUNT).keys());
 	return (
@@ -52,7 +59,7 @@ const Page1 = (props) => {
 					</div>
 				</div>
 			</div>
-			<Carousel slides={slides} />
+			<Carousel slides={slides} photos={photos} />
 		</main>
 	)
 };
