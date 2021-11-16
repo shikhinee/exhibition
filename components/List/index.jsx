@@ -5,11 +5,11 @@ import Link from 'next/link'
 
 //Styles must be imported here
 import styles from './List.module.scss'
-import cover1 from '@/public/cover1.jpg'
-import cover2 from '@/public/cover2.jpg'
-import cover3 from '@/public/cover3.jpg'
-import cover4 from '@/public/cover4.jpg'
-import cover5 from '@/public/cover5.jpg'
+import cover1 from '../../public/cover1.jpg'
+import cover2 from '../../public/cover2.jpg'
+import cover3 from '../../public/cover3.jpg'
+import cover4 from '../../public/cover4.jpg'
+import cover5 from '../../public/cover5.jpg'
 
 const List = (props) => {
     return (
