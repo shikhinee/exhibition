@@ -5,16 +5,26 @@ import Image from 'next/image'
 //import COMPOSITES from '@/composites'
 
 //import COMPONENT from '@/components'
-import Cover from '@/components/Cover'
+import cover from '@/public/cover.jpg'
 import List from '@/components/List'
 import styles from './Tasks.module.scss'
-import script from '@/public/script.png'
 const Landing = (props) => {
 	 return (
 		 <div className={styles.container}>
 			 <div className={styles.containerCover}>
-			 <Cover/>
-			 </div>
+			 <div className={styles.coverContainer}>
+            <div className={styles.coverimg}>     
+                <Image
+                    alt='cover'
+                    src={cover}
+                    layout='fill'
+                    objectFit='cover'
+                    quality={100}
+                /> 
+            </div>
+            <div className={styles.shadow}>
+            </div>
+        </div>			 </div>
 			{/* <div className={styles.containerDescription}>			 
 				<div className={styles.text}>
 				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis dolor explicabo praesentium quaerat placeat, dicta impedit numquam, eos nobis beatae laudantium sit ab! Voluptatem, amet. Distinctio quod optio natus ipsam?

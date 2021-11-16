@@ -35,7 +35,7 @@
   .slide {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     min-width: 100%;
     position: relative;
     @include respondMax(md){
@@ -45,13 +45,14 @@
   .slideInner {
     position: relative;
     overflow: hidden;
-    height: min-content;
+    height: max-content;
     width: min-content;
     margin: 0rem 5rem;
     justify-content: center;
     align-items: center;
     @include respondMax(md){
       width: auto;
+      margin: 0rem;
     }
   }
   

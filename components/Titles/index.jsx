@@ -4,10 +4,10 @@
 
 
 import title1 from "@/public/survaljbichgiindeejis.png";
-import title2 from "@/public/script.png";
-import title3 from "@/public/script.png";
-import title4 from "@/public/script.png";
-import title5 from "@/public/script.png";
+import title2 from "@/public/ErdeneseerUrlasanbuteeliindeejis.png"
+import title3 from "@/public/OntsgoiButeeliinDeejis.png"
+import title4 from "@/public/MongolchuudiinBichigUsgiinDursgal.png"
+import title5 from "@/public/UlamjlaltBichgiinHeregledhuun.png"
     const Titles = [
   {
     image: title1,

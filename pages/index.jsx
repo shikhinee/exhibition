@@ -1,4 +1,3 @@
-import ThemeToggler from "@/components/ThemeToggler";
 import RootLayout from "@/layouts/Root";
 import styles from "./Root.module.scss";
 import Landing from "@/views/Home/Landing"

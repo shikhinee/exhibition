@@ -3,18 +3,42 @@ import Image from 'next/image'
 import { useState, useEffect, useCallback, useRef } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { PrevButton, NextButton } from "@/components/CarouselButton";
-import { mediaByIndex, length, mediaPhotoCount , photoLength} from "@/components/Media";
-import { useNestedEmblaCarousel } from "@/components/NestedCarousel";
+import { mediaByIndex, length, mediaPhotoCount , photoLength, photoByCount} from "@/components/Media";
 import CarouselThumb from "@/components/CarouselThumb"
 //import STORE from '@/store'
 
 import styles from './InnerCarousel.module.scss'
 
-const InnerCarousel = ({ setLockParentScroll , count }) => {
-	const [viewportRef, embla] = useEmblaCarousel();
-    const PHOTO_COUNT = photoLength[count];
- 	const photos = Array.from(Array(PHOTO_COUNT).keys());
-    // console.log(mediaPhotoCount(0))
+const InnerCarousel = ({photos ,setLockParentScroll , count }) => {
+	const PHOTO_COUNT = photoLength[count];
+	photos = Array.from(Array(PHOTO_COUNT).keys());
+	const [selectedIndex, setSelectedIndex] = useState(0);
+  const [mainViewportRef, embla] = useEmblaCarousel({ skipSnaps: false });
+  const [thumbViewportRef, emblaThumbs] = useEmblaCarousel({
+    containScroll: "keepSnaps",
+    selectedClass: "",
+    dragFree: true
+  });
+
+  const onThumbClick = useCallback(
+    (index) => {
+      if (!embla || !emblaThumbs) return;
+      if (emblaThumbs.clickAllowed()) embla.scrollTo(index);
+    },
+    [embla, emblaThumbs]
+  );
+    console.log(count)
+  const onSelect = useCallback(() => {
+    if (!embla || !emblaThumbs) return;
+    setSelectedIndex(embla.selectedScrollSnap());
+    emblaThumbs.scrollTo(embla.selectedScrollSnap());
+  }, [embla, emblaThumbs, setSelectedIndex]);
+
+  useEffect(() => {
+    if (!embla) return;
+    onSelect();
+    embla.on("select", onSelect);
+  }, [embla, onSelect]);
 
 	useEffect(() => {
 		if (!embla) return;
@@ -24,18 +48,16 @@ const InnerCarousel = ({ setLockParentScroll , count }) => {
 
 	return (
 		<div className={styles.embla}>
-			<div className={styles.emblaViewport} ref={viewportRef}>
+			<div className={styles.emblaViewport} ref={mainViewportRef}>
 				<div className={styles.emblaContainer}>
 					{photos.map((index) => (
 						<div className={styles.slide} key={index}>
 							<div className={styles.slideInner}>
 								<div className={styles.slideImg}>
 									<div className={styles.image}>
-
-									
 									<Image
 										layout='intrinsic'
-										src={mediaByIndex(index).image[0]}
+										src={photoByCount(count , index)}
 										alt="A cool cat."
 									/>
 									</div>
@@ -46,6 +68,7 @@ const InnerCarousel = ({ setLockParentScroll , count }) => {
 				</div>
 			</div>
 		</div>
+        
 	);
 };
 export default InnerCarousel;

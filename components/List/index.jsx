@@ -5,18 +5,18 @@ import Link from 'next/link'
 
 //Styles must be imported here
 import styles from './List.module.scss'
-import cover1 from '@/public/Cover1.jpg'
-import cover2 from '@/public/Cover2.jpg'
-import cover3 from '@/public/Cover3.jpg'
-import cover4 from '@/public/Cover4.jpg'
-import cover5 from '@/public/Cover5.jpg'
+import cover1 from '@/public/cover1.jpg'
+import cover2 from '@/public/cover2.jpg'
+import cover3 from '@/public/cover3.jpg'
+import cover4 from '@/public/cover4.jpg'
+import cover5 from '@/public/cover5.jpg'
 
 const List = (props) => {
     return (
         <div className={styles.container}>
             <div className={styles.row}>
                 <div className={styles.column}>
-                <Link href="/exhibition1">
+                <Link href="/exhibition1" passHref>
                     <div className={styles.shadow}>
                     <div className={styles.img}>     
                         <Image
@@ -33,7 +33,7 @@ const List = (props) => {
                     </Link>
                 </div>
                 <div className={styles.column}>
-                <Link href="/exhibition2">
+                <Link href="/exhibition2" passHref>
                     <div className={styles.img}>     
                         <Image
                             alt="librarycover"
@@ -48,7 +48,7 @@ const List = (props) => {
                     </Link>
                 </div>
                 <div className={styles.column}>
-                <Link href="/exhibition3">
+                <Link href="/exhibition3" passHref>
                     <div className={styles.img}>     
                         <Image
                             alt="librarycover"
@@ -65,7 +65,7 @@ const List = (props) => {
             </div>
             <div className={styles.row}>
             <div className={styles.column}>
-                <Link href="/exhibition4">
+                <Link href="/exhibition4" passHref>
                         <div className={styles.img}>     
                             <Image
                                 alt="librarycover"
@@ -80,7 +80,7 @@ const List = (props) => {
                                             </Link>
                     </div>
             <div className={styles.column}>
-                <Link href="/exhibition5">
+                <Link href="/exhibition5" passHref>
                     <div className={styles.img}>
                         <Image
                             alt="librarycover"

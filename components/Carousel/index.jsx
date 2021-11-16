@@ -13,6 +13,7 @@ import styles from './Carousel.module.scss'
 
 const Carousel = ({ slides }, props) => {
 
+	var photos = []
 
 	const [viewportRef, embla] = useEmblaCarousel();
 	const setLockParentScroll = useNestedEmblaCarousel(embla);
@@ -23,8 +24,8 @@ const Carousel = ({ slides }, props) => {
 	const scrollPrev = useCallback(() => embla && embla.scrollPrev(), [embla]);
 	const scrollNext = useCallback(() => embla && embla.scrollNext(), [embla]);
 	const scrollTo = useCallback((index) => embla && embla.scrollTo(index), [
-    embla
-  ]);
+		embla
+	]);
 	const onSelect = useCallback(() => {
 		if (!embla) return;
 		setSelectedIndex(embla.selectedScrollSnap());
@@ -40,6 +41,11 @@ const Carousel = ({ slides }, props) => {
 	}, [embla, onSelect]);
 	return (
 		<div className={styles.embla}>
+			<div className={styles.navButton}>
+				<PrevButton onClick={scrollPrev} enabled={prevBtnEnabled} />
+				<p>{selectedIndex + 1} of {length}</p>
+				<NextButton onClick={scrollNext} enabled={nextBtnEnabled} />
+			</div>
 			<div className={styles.emblaViewport} ref={viewportRef}>
 				<div className={styles.emblaContainer}>
 					{slides.map((currElement, index) => (
@@ -47,11 +53,11 @@ const Carousel = ({ slides }, props) => {
 							<div className={styles.slideInner}>
 								<div className={styles.slideImg}>
 									<div className={styles.image}>
-									<InnerCarousel
-										// photos={photos}
-										setLockParentScroll={setLockParentScroll}
-										count={selectedIndex}
-									/>
+										<InnerCarousel
+											photos={photos}
+											setLockParentScroll={setLockParentScroll}
+											count={selectedIndex}
+										/>
 									</div>
 								</div>
 							</div>
@@ -78,11 +84,6 @@ const Carousel = ({ slides }, props) => {
 
 					))}
 				</div>
-												<div className={styles.navButton}>
-									<PrevButton onClick={scrollPrev} enabled={prevBtnEnabled} />
-									<p>{selectedIndex + 1} of {length}</p>
-									<NextButton onClick={scrollNext} enabled={nextBtnEnabled} />
-								</div>
 			</div>
 		</div>
 	);
