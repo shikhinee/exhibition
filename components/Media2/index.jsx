@@ -3,109 +3,116 @@
 //import STORE from '@/store'
 
 
-import media1 from "@/public/Jalzetembanganjuur1.png";
-import media2 from "@/public/altantovch.png";
-import media3 from "@/public/hurdenzurgiinbichmel.png";
-import media4 from "@/public/asragchnertiintuuh.png";
-import media5 from "@/public/erdeniintovch.png";
-import media6 from "@/public/Chingisiindursgalintuuver1.png";
-import media7 from "@/public/TseveeniiMongolinulsintuuh1.png";
-import media8 from "@/public/Mergedgarahinorongarbichmel1.png";
-import media9 from "@/public/Bogdinorgomjlol1.png";
+import media1 from "@/public/Sahiusandaraeh1.png";
+import media11 from "@/public/Sahiusandaraeh2.png";
+import media2 from "@/public/Tsogtnuutshuraanguinundes1.png";
+import media21 from "@/public/Tsogtnuutshuraanguinundes2.png";
+import media3 from "@/public/10burhnitangarag1.png";
+import media31 from "@/public/10burhnitangarag2.png";
+import media4 from "@/public/Enhamgalangiinjadamba1.png";
+import media41 from "@/public/Enhamgalangiinjadamba2.png";
+import media5 from "@/public/huilmalerdeniintovch1.png";
+import media51 from "@/public/huilmalerdeniintovch1.png";
+import media6 from "@/public/ulgeriindalaitomorhavtastai1.png";
+import media61 from "@/public/ulgeriindalaitomorhavtastai2.png";
+import media7 from "@/public/Shagjiindotzam1.png";
+import media71 from "@/public/Shagjiindotzam2.png";
+import media8 from "@/public/Mongolinnuutstovchooanhnihevlel1.png";
+import media81 from "@/public/Mongolinnuutstovchooanhnihevlel2.png";
+import media9 from "@/public/Itgel(zuuoroojoyson)1.png";
+import media91 from "@/public/Itgel(zuuoroojoyson)2.png";
 import media10 from "@/public/Oyuntulhuur1.png";
+import media101 from "@/public/Oyuntulhuur2.png";
 
 
-import picture1 from "@/public/Jalzetembanganjuur1.png"
-import picture2 from "@/public/Jalzetembanganjuur2.png"
-import picture3 from "@/public/Jalzetembanganjuur3.png"
+import script1 from "@/public/SahiusanDaraEh.png"
+import script2 from "@/public/TsogtNuutsiinHuraanguinUndes.png"
+import script3 from "@/public/ArvanBurhaniiTangarag.png"
+import script4 from "@/public/EnhAmgalangiinJadamba.png"
+import script5 from "@/public/ErdeniinTovch(Huilmal).png"
+import script6 from "@/public/UlgeriinDalai(TumurHavtastai).png"
+import script7 from "@/public/S.ShagjDutZam.png"
+import script8 from "@/public/MongoliinNuutsTovchoo(HamgiinAnhniiHevlel).png"
+import script9 from "@/public/Itgel(ZuuOroojOyoson).png"
+import script10 from "@/public/OyunTulhuur.png"
 
-import script1 from "@/public/JalzeTembanGanjuur.png"
-import script2 from "@/public/script.png"
-import script3 from "@/public/script.png"
-import script4 from "@/public/script.png"
-import script5 from "@/public/script.png"
-import script6 from "@/public/script.png"
-import script7 from "@/public/script.png"
-import script8 from "@/public/script.png"
-import script9 from "@/public/script.png"
 import { indexOf } from "lodash";
 
 
 const image1 = {
-    image: [media1, media2 , media3, media4],
-    photoCount: 4,
+    image: [media1, media11],
+    photoCount:2,
     script: script1,
-    title: "ЖАЛЗЭ ТЭМБАН ГАНЖУУР",
-    text: "Материал: Төвөд цаас хятад бэх Хэмжээ: 70.5х15 см 111 боть Мөрийн тоо: 8 Жалзэ Тэмбан Ганжуурыг тавдугаар Далай лам Лувсанжамц Төвөдөөс Өндөр гэгээн Занабазарт 1671 онд бэлэг болгон өргөж байжээ. Энэхүү гоёмсог гар бичмэл эх нь Монголд төдийгүй дэлхийд хамгийн эртний ховор нандинд тооцогдох их хөлгөн судар юм."
+    title: "САХИУСАН ДАРА ЭХ ",
+    text: "Бүтээгч: С. Шагж Материал: Орос цаас, хар бэх, улаан шунх Хэмжээ: 4.9x5.4 см, бичвэрийн хэмжээ 4.5x5 см, зузаан 0.08 мм, жин 0.2 гр XX зууны эхэн үед Монгол Улсын Судар бичгийн хүрээлэнгийн жинхэнэ гишүүн, эрдэмтэн С. Шагж (1886-1938)-ийн бүтээсэн Ногоон, Цагаан Дара эхийн төвөд бичмэл судар юм. Нийтдээ 62 бадаг, 250 мөр, 5718 үсгийн тэмдэгт, 2510 цэг шад, бүхэлдээ 8228 тэмдэгтийг багтаажээ. Төвөд сав үсгээр 79 мөрөөр улаан хар бэхийг алаглуулан бичсэн, хамгийн жижиг бүтээл юм. Монгол Улсын Засгийн Газрын түүх соёлын 'ХОСГҮЙ ҮНЭТ' өвд 2002 онд ЮНЕСКО-ийн “Дэлхийн дурсамж” хөтөлбөрийн Ази-Номхон далайн бүс нутгийн өвд 2014 онд бүртгэгджээ."
 }
 const image2 = {
-    image: [media2, media2 , media3],
-    photoCount: 3,
+    image: [media2, media21],
+    photoCount:2,
     script: script2,
-    title: "ЭРТНИЙ ХААДЫН ҮНДЭСЛЭСЭН ТӨР ЁСНЫ ЗОХИОЛЫГ ТОВЧЛОН ХУРААСАН АЛТАН ТОВЧ ХЭМЭЭХ ОРШВОЙ",
-    text: "Зохиогч: Лувсанданзан Холбогдох он цаг: 1651 Материал: Болгомол цаас, хар бэх Хэмжээ: 62.8х18.8 см, бичвэрийн хэмжээ 49.2х14.4 см, 178 хуудас Лувсанданзаны 'Алтан товч'-ийн жинхэнэ эх болох хулсан үзгийн бичмэлийг Дорнод аймгийн Баянтүмэн хошууны Еншөөбүү овгийн Дарь тайжид хадгалагдаж байсныг Судар бичгийн хүрээлэнгийн анхны дарга О. Жамьян гуай 1926 онд олж авчирчээ. “Алтан товч” нь “Монголын нууц товчоо”-ны 282 зүйлээс 233 нь бараг тохирч байдаг учраас “Монголын нууц товчоо”-ны монгол бичгээр үлдсэн нэгэн эх гэж үздэг. Монгол Улсын Засгийн Газрын түүх соёлын 'ХОСГҮЙ ҮНЭТ' өвд 1995 онд ЮНЕСКО-ийн “Дэлхийн дурсамж” хөтөлбөрийн Ази-Номхон далайн бүс нутгийн өвд 2010 онд ЮНЕСКО-ийн “Дэлхийн Дурсамж” хөтөлбөрийн олон улсын баримтат өвд 2011 онд бүртгэгдсэн байна."
+    title: "ЦОГТ НУУЦЫН ХУРААНГУЙН ҮНДЭС /Сандуйн жүд/",
+    text: "Материал: Болгомол хар цаас, алт Хэмжээ: 5.3х2.2 см, бичвэрийн хэмжээ 4.5х1.5 см, зузаан 0.9 см, жин 10гр, 10 хуудас Мөрийн тоо: 2 'Нууц хураангуйн үндэс' бол бурханы шашны номуудаас хамгийн эрхэмд тоодогдох дээд тарнийн ёсны судар юм. Энэхүү дурсгал нь алтан үсгээр бичсэн хамгийн жижиг гар бичмэл болно."
 }
 const image3 = {
-    image: [media1, media2 , media3],
-    photoCount: 3,
+    image: [media3, media31],
+    photoCount:2,
     script: script3,
-    title:"ЧИНГИСЭЭС ЭХЛЭН ХАЛХЫН БҮХ ОЛОН НОЁДЫН УГСАА ЗАЛГАМЖИЛСАН ХҮРДЭН ЗУРГИЙН БИЧМЭЛ",
-    text: "Холбогдох он цаг: XIX зууны эхэн Материал: Даавуу, хар бэх, улаан шунх  Хэмжээ: 88х90.5 см Энэхүү угийн бичигт Халхын хошуудын засаг ноёдын угсаа гарлыг Чингис хаанаас эх аван хөтөлсөн бөгөөд хэн хэдийд бичсэн нь тодорхойгүй боловч угийн бичигт орсон хүмүүсийн төрсөн он цаг, бичгийн хэвийг харвал 19-р зууны эхний хагаст бичсэн байна хэмээн эрдэмтэд үздэг. МУҮНС-д хоёр хувь хадгалагдаж байгаагийн нэг нь нэлээд гэмтсэн байна."
+    title: "АРВАН БУРХАНЫ ТАНГАРАГ",
+    text: "Тус бүтээл нь хамгийн жижиг модон барын хэвлэл бөгөөд муутуу цаасан дээр хар бэхээр 4 мөрөөр барласан 14 хуудас бүхий судар юм. Уг номыг академич, төрийн 3 удаагийн шагналт, зохиолч Ц. Дамдинсүрэн 1980 оны 10 дугаар сарын 24-ний өдөр Улсын номын санд бэлэглэжээ."
 }
 const image4 = {
-    image: [media1, media2 , media3],
-    photoCount: 3,
+    image: [media4, media41],
+    photoCount:2,
     script: script4,
-    title: "АСРАГЧ НЭРТИЙН ТҮҮХ",
-    text: "Материал: Болгомол цаас, хар бэх Хэмжээ: 38.9х8.9 см Мөрийн тоо: 28 Халхын Сайн ноён ханы дээд өвөг Жамба эрх дайчин 1677 онд туурвисан энэхүү монгол түүхэн сурвалж нь 'Монголын нууц товчоо' тэргүүтнийг шууд ашиглаж бичсэн ганц хувь модон үзгээр бичсэн Монголын түүхийн үнэ цэнтэй бүтээл юм. Ялангуяа 1662 оноос хойших Халх долоон хошуунд болсон 15 жилийн түүхэн үйл явдал, түүхэн зүтгэлтнүүдийн тухай баримт мэдээнүүд багтсан байдаг. Монгол Улсын Засгийн Газрын 2012 оны 105-р тогтоолоор түүх соёлын “ХОСГҮЙ ҮНЭТ” өвд бүртгэжээ."
+    title: "ЭНХ-АМГАЛАНГИЙН ЖАДАМБА",
+    text: "Хэмжээ: 82х32 см, 601 хуудас Манж Чин улсын Энх-Амгалан хааны үед (1662-1722) бүтээгдсэн энэ судар нь МУҮНС-д хадгалагдаж буй модон бараар барласан хамгийн том судар юм. Хятад муутуу цаасан дээр төвөд үсгээр 8 мөрөөр хар бэхээр сийлж барлажээ. Судрын хүрээ чимэглэлийг хуудас нэг бүрчлэн улаан шунхан дардсаар дарж хүрээ үүсгэсэн байдаг."
 }
 const image5 = {
-    image: [media1, media2 , media3],
-    photoCount: 3,
+    image: [media5, media51],
+    photoCount:2,
     script: script5,
-    title: "ЭРДЭНИЙН ТОВЧ /өргөө эх/",
-    text: "Материал: Монгол цаас, хар бэх, улаан шунх Хэмжээ:37х12.8 см, бичвэрийн хэмжээ 29.5х9.5 см, 62 хуудас Энэхүү хулсан үзгийн дармал тигээр бичсэн эх нь 'Эрдэнийн товч' сурвалжийн ховор дурсгалын нэг бөгөөд МУҮНС-д ганц хувь хадгалагдаж буй. Бичгийн хэвийн хувьд бусад эхээс нэлээд эртнийх гэж үздэг."
+    title: "ЭРДЭНИЙН ТОВЧ /хуйлмал/",
+    text: "Энэхүү гар бичмэл эх нь хоёр талдаа төмрөөр хавтаслаж, үдэж, нугасалсан хоёр талд нь гарчиг бичих хэв цохьсон гэдгээрээ онцлогтой хадгалалт хамгаалалтын өвөрмөц дурсгал юм."
 }
 const image6 = {
-    image: [media1, media2 , media3],
-    photoCount: 3,
+    image: [media6, media61],
+    photoCount:2,
     script: script6,
-    title: "ЧИНГИСИЙН ДУРСГАЛЫН ТҮҮВЭР",
+    title: "ҮЛГЭРИЙН ДАЛАЙ /төмөр хавтастай/",
     text: "Хэмжээ: 19.2х13.2 см 'Өнчин хөвгүүний сэцэлсэн шаштир' хэмээх бүтээлийг 1925 онд Бээжин дэх Тэмгэтийн байгуулсан монгол бичгийн хороонд 'Чингисийн дурсгалын түүвэр' нэрээр хэвлэжээ."
 }
 const image7 = {
-    image: [media1, media2 , media3],
-    photoCount: 3,
+    image: [media7, media71],
+    photoCount:2,
     script: script7,
-    title: "Ж. ЦЭВЭЭН 'МОНГОЛ УЛСЫН ТҮҮХ'",
-    text: "Хэмжээ: 26х27 см Хүннү гүрнээс эхлээд 1920 он хүртэлх Монгол улсын түүхийг хамарсан гурван бүлэг гар бичмэл бүтээл юм. Энэ нь Цэвээн гуайн 'Оюутны сургууль'-д багшилж байсан үеийн лекц болно. Монголын орчин цагийн түүх бичлэгийн үндсийг тавьсан гэж эрдэмтэд үздэг."
+    title: "С. ШАГЖ 'ДӨТ ЗАМ'",
+    text: "Шагж гуайн гар бичмэл нь манайд хадгалагдаж буй хамгийн жижиг монгол бичгээр бичсэн бүтээл юм. Энэхүү сурах бичигт монгол бичгийн цагаан толгой болон хэл зүйн зарим дүрмийг багтаасан байдаг."
 }
 const image8 = {
-    image: [media1, media2 , media3],
-    photoCount: 3,
+    image: [media8, media81],
+    photoCount:2,
     script: script8,
-    title: "'МЭРГЭД ГАРАХЫН ОРОН' ТОЛЬ БИЧГИЙН ГАР БИЧМЭЛ",
-    text: "Материал: Орос цаас, хар бэх Хэмжээ:34х9.5 см Мөрийн тоо: 2 'Мэргэд гарахын орон' хэмээх толь бичгийг Жанжаа Ролбийдорж тэргүүтэн эрдэмтэд Данжуурыг нэр томьёоны хувьд жигдлэн орчуулахын тулд 1741-1742 онд зохиожээ. Энэхүү толь бичиг дэх тэжээхүй ухаан буюу анагаах ухааны бүлгийг хуулж бичсэн төвөд-монгол хадмал, 32 хуудас бүхий буриад гар бичмэл юм."
+    title: "МОНГОЛЫН НУУЦ ТОВЧОО /хамгийн анхны хэвлэл/",
+    text: "'Монголын нууц товчоо'-г анх Оросын эрдэмтэн П. И. Кафаров 1866 онд 'Чингис хааны тухай эртний монгол түүх' хэмээх нэрээр орос хэлээр орчуулан хэвлүүлжээ."
 }
 const image9 = {
-    image: [media1, media2 , media3],
-    photoCount: 3,
+    image: [media9, media91],
+    photoCount:2,
     script: script9,
-    title: "БОГДЫН ӨРГӨМЖЛӨЛ",
-    text: "Материал: Пүүсүү торго, хар бэх ХХ зууны эхэн үед Манж Чин улсаас туурга тусгаарлаж, Богдыг хаан ширээнд залан, оны цолоо Олноо өргөгдсөн хэмээсэн билээ. Монгол улсдаа хүчин зүтгэсэн ноёд, лам нарт хишиг хүртээж, хэргэм зэрэг олгохыг баталсан өргөмжлөлийг 'Богдын өргөмжлөл' хэмээн нэрлэдэг."
-}
-const image10 = {
-    image: [media1, media2 , media3],
-    photoCount: 3,
-    script: script9,
-    title: "ОЮУН ТҮЛХҮҮР",
-    text: "Хэмжээ: 12.5x18.2 см Монгол Улсын XVIII он буюу 1928 онд Ардыг гэгээрүүлэх яамнаас Улаанбаатар хот дахь монгол үсгийн хэвлэлийн хороонд хэвлэсэн хорголжин барын анхны хэвлэл гэдгээрээ онцлог."
+    title: "ИТГЭЛ /зүү ороож оёсон/",
+    text: "Хэмжээ: 20.5х8.5 см, бичвэрийн хэмжээ 16.2х5.8 см, зузаан, 8 хуудас XIX зууны сүүлчээр Түшээт хан аймгийн Ар долоон гөрөөчин овгийн уран хатгамалч Должин гэгч эмэгтэйн зүү ороож урласан Итгэл хэмээх судар юм. Энэхүү номын үсгийг алтан саат утсаар нэг ч зангилаа гаргалгүйгээр хар даавуун дээр зүү ороож, маш гоёмсгоор урласан байх ба судрын нэг нүүрийг даавууныхаа нэг талд хатгасан бөгөөд ийм хоёр нүүрийг ар талаар нь судрын нэгэн хуудас болгон нийлүүлж ирмэгийг улаан торгон утсаар хөвөрджээ."
 }
 
-export const media = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10];
+export const media = [image1, image2, image3, image4, image5, image6, image7, image8, image9];
+export const mediablabla = [image1.photoCount, image2.photoCount, 
+    image3.photoCount, image4.photoCount, image5.photoCount, 
+    image6.photoCount, image7.photoCount, image8.photoCount, image9.photoCount];
+
+
+
 export const mediaByIndex = index => media[index % media.length];
 export const mediaPhotoCount = index => media[index % media.length].photoCount;
 export const length = media.length;
 export const photoLength = [image1.photoCount]
 export const currentSlide = indexOf(media)
-export const photoByCount = (count , index) => media[count].image[index % 10]
+export const photoByCount = (count, index) => media[count].image[index % 10]

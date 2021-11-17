@@ -1,7 +1,7 @@
 //Next, React (core node_modules) imports must be placed here
 import Image from 'next/image'
 //import STORE from '@/store'
-import Carousel from '@/components/Carousel'
+import Carousel2 from '@/components/Carousel2'
 import Titles from '@/components/Titles'
 import cover3 from '@/public/cover3.jpg'
 //import COMPOSITES from '@/composites'
@@ -52,7 +52,7 @@ const Page3 = (props) => {
 					</div>
 				</div>
 			</div>
-			<Carousel slides={slides} />
+			<Carousel2 slides={slides} />
 		</main>
 	)
 };
