@@ -5,7 +5,6 @@ import Image from 'next/image'
 //import COMPOSITES from '@/composites'
 
 //import COMPONENT from '@/components'
-import cover from '@/public/cover.jpg'
 import List from '@/components/List'
 import styles from './Tasks.module.scss'
 const Landing = (props) => {
@@ -16,7 +15,7 @@ const Landing = (props) => {
             <div className={styles.coverimg}>     
                 <Image
                     alt='cover'
-                    src={cover}
+                    src='/Cover.png'
                     layout='fill'
                     objectFit='cover'
                     quality={100}

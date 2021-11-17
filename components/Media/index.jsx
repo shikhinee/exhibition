@@ -114,9 +114,6 @@ export const media = [image1, image2, image3, image4, image5, image6, image7, im
 export const mediablabla = [image1.photoCount, image2.photoCount, 
     image3.photoCount, image4.photoCount, image5.photoCount, 
     image6.photoCount, image7.photoCount, image8.photoCount, image9.photoCount];
-
-
-
 export const mediaByIndex = index => media[index % media.length];
 export const mediaPhotoCount = index => media[index % media.length].photoCount;
 export const length = media.length;

@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { useState, useEffect, useCallback, useRef } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { PrevButton, NextButton } from "@/components/CarouselButton";
-import { mediaByIndex, length, photoLength } from "@/components/Media";
+import { mediaByIndex, length, mediablabla, photoLength } from "@/components/Media";
 import { useNestedEmblaCarousel } from "@/components/NestedCarousel";
 import CarouselThumb from "@/components/CarouselThumb"
 import InnerCarousel4 from "@/components/InnerCarousel4"
@@ -13,7 +13,6 @@ import styles from './Carousel4.module.scss'
 
 const Carousel4 = ({ slides }, props) => {
 
-	var photos = []
 
 	const [viewportRef, embla] = useEmblaCarousel();
 	const setLockParentScroll = useNestedEmblaCarousel(embla);
@@ -32,8 +31,7 @@ const Carousel4 = ({ slides }, props) => {
 		setPrevBtnEnabled(embla.canScrollPrev());
 		setNextBtnEnabled(embla.canScrollNext());
 	}, [embla, setSelectedIndex]);
-	console.log(selectedIndex)
-	useEffect(() => {
+	const photos = Array.from(Array(mediablabla[selectedIndex]).keys());	useEffect(() => {
 		if (!embla) return;
 		setScrollSnaps(embla.scrollSnapList());
 		embla.on("select", onSelect);

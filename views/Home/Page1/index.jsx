@@ -3,7 +3,6 @@ import Image from 'next/image'
 //import STORE from '@/store'
 import Carousel from '@/components/Carousel'
 import Titles from '@/components/Titles'
-import cover1 from '@/public/cover1.jpg'
 //import COMPOSITES from '@/composites'
 
 //import COMPONENT from '@/components'
@@ -25,7 +24,7 @@ const Page1 = (props) => {
 				<div className={styles.coverimg}>
 					<Image
 						alt='cover'
-						src={cover1}
+						src='/Cover1.png'
 						layout='fill'
 						objectFit='cover'
 						quality={100}

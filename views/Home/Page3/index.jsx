@@ -3,7 +3,6 @@ import Image from 'next/image'
 //import STORE from '@/store'
 import Carousel2 from '@/components/Carousel2'
 import Titles from '@/components/Titles'
-import cover3 from '@/public/cover3.jpg'
 //import COMPOSITES from '@/composites'
 
 //import COMPONENT from '@/components'
@@ -11,6 +10,10 @@ import cover3 from '@/public/cover3.jpg'
 import styles from './Exhibition3.module.scss'
 
 const Page3 = (props) => {
+	const photos = (selectedIndex) => {
+		// console.log(selectedIndex)
+		return Array.from(Array(2).keys());
+	}
 	const SLIDE_COUNT = 9;
 	const slides = Array.from(Array(SLIDE_COUNT).keys());
 	return (
@@ -19,7 +22,7 @@ const Page3 = (props) => {
 				<div className={styles.coverimg}>
 					<Image
 						alt='cover'
-						src={cover3}
+						src='/Cover3.png'
 						layout='fill'
 						objectFit='cover'
 						quality={100}
@@ -52,7 +55,7 @@ const Page3 = (props) => {
 					</div>
 				</div>
 			</div>
-			<Carousel2 slides={slides} />
+			<Carousel2 slides={slides} photos={photos}/>
 		</main>
 	)
 };

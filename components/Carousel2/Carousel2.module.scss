@@ -15,7 +15,7 @@
     width: auto;
     height: min-content;
   }
-  
+    
   .emblaViewport.is-draggable {
     cursor: move;
     cursor: grab;
@@ -35,7 +35,7 @@
   .slide {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     min-width: 100%;
     position: relative;
     @include respondMax(md){
@@ -105,6 +105,7 @@
   flex-direction: row;
   justify-content: center;
   width: 100%;
+  margin: 1rem;
   p {
     margin: 0 2rem;
   }

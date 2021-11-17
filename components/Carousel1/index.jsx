@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { useState, useEffect, useCallback, useRef } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { PrevButton, NextButton } from "@/components/CarouselButton";
-import { mediaByIndex, length, photoLength } from "@/components/Media1";
+import { mediaByIndex, length, mediablabla, photoLength } from "@/components/Media1";
 import { useNestedEmblaCarousel } from "@/components/NestedCarousel";
 import CarouselThumb from "@/components/CarouselThumb"
 import InnerCarousel1 from "@/components/InnerCarousel1"
@@ -13,7 +13,6 @@ import styles from './Carousel1.module.scss'
 
 const Carousel1 = ({ slides }, props) => {
 
-	var photos = []
 
 	const [viewportRef, embla] = useEmblaCarousel();
 	const setLockParentScroll = useNestedEmblaCarousel(embla);
@@ -21,6 +20,7 @@ const Carousel1 = ({ slides }, props) => {
 	const [nextBtnEnabled, setNextBtnEnabled] = useState(false);
 	const [selectedIndex, setSelectedIndex] = useState(0);
 	const [scrollSnaps, setScrollSnaps] = useState([]);
+	
 	const scrollPrev = useCallback(() => embla && embla.scrollPrev(), [embla]);
 	const scrollNext = useCallback(() => embla && embla.scrollNext(), [embla]);
 	const scrollTo = useCallback((index) => embla && embla.scrollTo(index), [
@@ -32,6 +32,7 @@ const Carousel1 = ({ slides }, props) => {
 		setPrevBtnEnabled(embla.canScrollPrev());
 		setNextBtnEnabled(embla.canScrollNext());
 	}, [embla, setSelectedIndex]);
+	const photos = Array.from(Array(mediablabla[selectedIndex]).keys());
 	console.log(selectedIndex)
 	useEffect(() => {
 		if (!embla) return;
@@ -39,11 +40,12 @@ const Carousel1 = ({ slides }, props) => {
 		embla.on("select", onSelect);
 		onSelect();
 	}, [embla, onSelect]);
+
 	return (
 		<div className={styles.embla}>
 			<div className={styles.navButton}>
 				<PrevButton onClick={scrollPrev} enabled={prevBtnEnabled} />
-				<p>{selectedIndex+1} of {length}</p>
+				<p>{selectedIndex + 1} of {length}</p>
 				<NextButton onClick={scrollNext} enabled={nextBtnEnabled} />
 			</div>
 			<div className={styles.emblaViewport} ref={viewportRef}>

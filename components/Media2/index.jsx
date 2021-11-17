@@ -21,9 +21,6 @@ import media8 from "@/public/Mongolinnuutstovchooanhnihevlel1.png";
 import media81 from "@/public/Mongolinnuutstovchooanhnihevlel2.png";
 import media9 from "@/public/Itgel(zuuoroojoyson)1.png";
 import media91 from "@/public/Itgel(zuuoroojoyson)2.png";
-import media10 from "@/public/Oyuntulhuur1.png";
-import media101 from "@/public/Oyuntulhuur2.png";
-
 
 import script1 from "@/public/SahiusanDaraEh.png"
 import script2 from "@/public/TsogtNuutsiinHuraanguinUndes.png"
@@ -34,7 +31,6 @@ import script6 from "@/public/UlgeriinDalai(TumurHavtastai).png"
 import script7 from "@/public/S.ShagjDutZam.png"
 import script8 from "@/public/MongoliinNuutsTovchoo(HamgiinAnhniiHevlel).png"
 import script9 from "@/public/Itgel(ZuuOroojOyoson).png"
-import script10 from "@/public/OyunTulhuur.png"
 
 import { indexOf } from "lodash";
 

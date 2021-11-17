@@ -9,32 +9,20 @@ import media2 from "@/public/SuutBogdChingisHaanituujorshvoi(todusgeer)1.png";
 import media21 from "@/public/SuutBogdChingisHaanituujorshvoi(todusgeer)2.png";
 import media3 from "@/public/Buyantkhan1.png";
 import media31 from "@/public/Chingiseesehlenhalhiin2.png";
-import media4 from "@/public/Asragchnertiintuuh1.png";
-import media41 from "@/public/Asragchnertiintuuh2.png";
-import media5 from "@/public/Erdeniintovch(urguueh)1.jpg";
-import media51 from "@/public/Erdeniintovch(urguueh)2.jpg";
-import media6 from "@/public/Chingisiindursgalintuuver1.png";
-import media61 from "@/public/Chingisiindursgalintuuver2.png";
-import media7 from "@/public/TseveeniiMongolinulsintuuh1.png";
-import media71 from "@/public/TseveeniiMongolinulsintuuh2.png";
-import media8 from "@/public/Mergedgarahinorongarbichmel1.png";
-import media81 from "@/public/Mergedgarahinorongarbichmel2.png";
-import media9 from "@/public/Bogdinorgomjlol1.png";
-import media91 from "@/public/Bogdinorgomjlol2.png";
-import media10 from "@/public/Oyuntulhuur1.png";
-import media101 from "@/public/Oyuntulhuur2.png";
+import media4 from "@/public/Hevteedurvuljinbichig1.png";
+import media41 from "@/public/Hevteedurvuljinbichig2.png";
+import media5 from "@/public/Galigusegorshvoi21.png";
+import media51 from "@/public/Galigusegorshvoi22.png";
+import media6 from "@/public/Dorvoljinusgiindursgal1.png";
+import media61 from "@/public/Dorvoljinusgiindursgal2.png";
 
 
 import script1 from "@/public/SoyomboUsgiinTsagaanTolgoi.png"
 import script2 from "@/public/SuutBogdChinggisKhaaniiTuujHemeehOrshvoi.png"
 import script3 from "@/public/BuyantKhanHuvguuniiNamtar.png"
-import script4 from "@/public/AsragchNertiinTuuh.png"
-import script5 from "@/public/ErdeniinTovch(UrguuEh).png"
-import script6 from "@/public/Survaljbichgiindeejis.png"
-import script7 from "@/public/ChinggisiinDursgaliinTuuver.png"
-import script8 from "@/public/J.TseveenMongolUlsiinTuuh.png"
-import script9 from "@/public/BogdiinUrgumjlul.png"
-import script10 from "@/public/OyunTulhuur.png"
+import script4 from "@/public/HevteeDurvuljinUseg.png"
+import script5 from "@/public/GaligUsegOrshvoi.png"
+import script6 from "@/public/DurvuljinUsgiinDursgal.png"
 
 import { indexOf } from "lodash";
 

@@ -101,9 +101,12 @@ const image9 = {
 }
 
 export const media = [image1, image2, image3, image4, image5, image6, image7, image8, image9];
+export const mediablabla = [image1.photoCount, image2.photoCount, 
+    image3.photoCount, image4.photoCount, image5.photoCount, 
+    image6.photoCount, image7.photoCount, image8.photoCount, image9.photoCount];
 export const mediaByIndex = index => media[index % media.length];
 export const mediaPhotoCount = index => media[index % media.length].photoCount;
 export const length = media.length;
 export const photoLength = [image1.photoCount]
 export const currentSlide = indexOf(media)
-export const photoByCount = (count , index) => media[count].image[index % 10]
+export const photoByCount = (count, index) => media[count].image[index % 10]
