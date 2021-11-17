@@ -1,90 +1,87 @@
 //Next, React (core node_modules) imports must be placed here
-import Image from 'next/image'
+import Image from "next/image";
 import { useState, useEffect, useCallback, useRef } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { PrevButton, NextButton } from "@/components/CarouselButton";
-import { mediaByIndex, length, mediablabla, photoLength } from "@/components/Media1";
+import { media } from "@/components/Media1";
 import { useNestedEmblaCarousel } from "@/components/NestedCarousel";
-import CarouselThumb from "@/components/CarouselThumb"
-import InnerCarousel1 from "@/components/InnerCarousel1"
+import InnerCarousel1 from "@/components/InnerCarousel1";
 //import STORE from '@/store'
 
-import styles from './Carousel1.module.scss'
+import styles from "./Carousel1.module.scss";
 
 const Carousel1 = ({ slides }, props) => {
+  const [viewportRef, embla] = useEmblaCarousel();
+  const setLockParentScroll = useNestedEmblaCarousel(embla);
+  const [prevBtnEnabled, setPrevBtnEnabled] = useState(false);
+  const [nextBtnEnabled, setNextBtnEnabled] = useState(false);
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  const [scrollSnaps, setScrollSnaps] = useState([]);
+  const scrollPrev = useCallback(() => embla && embla.scrollPrev(), [embla]);
+  const scrollNext = useCallback(() => embla && embla.scrollNext(), [embla]);
+  const scrollTo = useCallback(
+    (index) => embla && embla.scrollTo(index),
+    [embla]
+  );
 
+  const onSelect = useCallback(() => {
+    if (!embla) return;
+    setSelectedIndex(embla.selectedScrollSnap());
+    setPrevBtnEnabled(embla.canScrollPrev());
+    setNextBtnEnabled(embla.canScrollNext());
+  }, [embla, setSelectedIndex]);
+  useEffect(() => {
+    if (!embla) return;
+    setScrollSnaps(embla.scrollSnapList());
+    embla.on("select", onSelect);
+    onSelect();
+  }, [embla, onSelect]);
+  return (
+    <div className={styles.embla}>
+      <div className={styles.navButton}>
+        <PrevButton onClick={scrollPrev} enabled={prevBtnEnabled} />
+        <p>
+          {selectedIndex + 1} of {media.length}
+        </p>
+        <NextButton onClick={scrollNext} enabled={nextBtnEnabled} />
+      </div>
+      <div className={styles.emblaViewport} ref={viewportRef}>
+        <div className={styles.emblaContainer}>
+          {slides.map((currElement, index) => (
+            <div className={styles.slide} key={index}>
+              <div className={styles.slideInner}>
+                <div className={styles.slideImg}>
+                  <div className={styles.image}>
+                    <InnerCarousel1
+                      photos={media[index].image}
+                      setLockParentScroll={setLockParentScroll}
+                      count={selectedIndex}
+                    />
+                  </div>
+                </div>
+              </div>
 
-	const [viewportRef, embla] = useEmblaCarousel();
-	const setLockParentScroll = useNestedEmblaCarousel(embla);
-	const [prevBtnEnabled, setPrevBtnEnabled] = useState(false);
-	const [nextBtnEnabled, setNextBtnEnabled] = useState(false);
-	const [selectedIndex, setSelectedIndex] = useState(0);
-	const [scrollSnaps, setScrollSnaps] = useState([]);
-	
-	const scrollPrev = useCallback(() => embla && embla.scrollPrev(), [embla]);
-	const scrollNext = useCallback(() => embla && embla.scrollNext(), [embla]);
-	const scrollTo = useCallback((index) => embla && embla.scrollTo(index), [
-		embla
-	]);
-	const onSelect = useCallback(() => {
-		if (!embla) return;
-		setSelectedIndex(embla.selectedScrollSnap());
-		setPrevBtnEnabled(embla.canScrollPrev());
-		setNextBtnEnabled(embla.canScrollNext());
-	}, [embla, setSelectedIndex]);
-	const photos = Array.from(Array(mediablabla[selectedIndex]).keys());
-	console.log(selectedIndex)
-	useEffect(() => {
-		if (!embla) return;
-		setScrollSnaps(embla.scrollSnapList());
-		embla.on("select", onSelect);
-		onSelect();
-	}, [embla, onSelect]);
-
-	return (
-		<div className={styles.embla}>
-			<div className={styles.navButton}>
-				<PrevButton onClick={scrollPrev} enabled={prevBtnEnabled} />
-				<p>{selectedIndex + 1} of {length}</p>
-				<NextButton onClick={scrollNext} enabled={nextBtnEnabled} />
-			</div>
-			<div className={styles.emblaViewport} ref={viewportRef}>
-				<div className={styles.emblaContainer}>
-					{slides.map((currElement, index) => (
-						<div className={styles.slide} key={index}>
-							<div className={styles.slideInner}>
-								<div className={styles.slideImg}>
-									<div className={styles.image}>
-										<InnerCarousel1
-											photos={photos}
-											setLockParentScroll={setLockParentScroll}
-											count={selectedIndex}
-										/>
-									</div>
-								</div>
-							</div>
-
-
-							<div className={styles.slideOuter}>
-								<div className={styles.textDesc}>
-									<h4>{mediaByIndex(index).title}</h4>
-									<p>{mediaByIndex(index).text}</p>
-								</div>
-								<div className={styles.scriptImg}>
-									<Image
-										layout='responsive'
-										src={mediaByIndex(index).script}
-										alt="A cool cat."
-									/>
-								</div>
-							</div>
-						</div>
-
-					))}
-				</div>
-			</div>
-		</div>
-	);
+              <div className={styles.slideOuter}>
+                <div className={styles.textDesc}>
+                  <h4>{media[index].title}</h4>
+                  <p>{media[index].text}</p>
+                </div>
+                <div className={styles.scriptImg}>
+                  <Image
+                    width="100%"
+                    height="100%"
+                    layout="responsive"
+                    src={media[index].script}
+                    alt="A cool cat."
+                  />
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Carousel1;

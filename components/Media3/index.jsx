@@ -28,44 +28,44 @@ import { indexOf } from "lodash";
 
 
 const image1 = {
-    image: [media1, media11],
+    image: ["/Soyombousgiintsagaantolgoi1.png", "/Soyombousgiintsagaantolgoi2.png"],
     photoCount:2,
-    script: script1,
+    script: "/SoyomboUsgiinTsagaanTolgoi.png",
     title: "СОЁМБО ҮСГИЙН ЦАГААН ТОЛГОЙ",
     text: "Өндөр гэгээн Занабазарын зохиосон соёмбо үсгээр бичсэн энэхүү цагаан толгойг орос цаасан дээр улаан шунх, хар бэхээр бичжээ."
 }
 const image2 = {
-    image: [media2, media21],
+    image: ["/SuutBogdChingisHaanituujorshvoi(todusgeer)1.png", "/SuutBogdChingisHaanituujorshvoi(todusgeer)2.png"],
     photoCount:2,
-    script: script2,
+    script: "/SuutBogdChinggisKhaaniiTuujHemeehOrshvoi.png",
     title: "СУУТ БОГД ЧИНГИС ХААНЫ ТУУЖ ХЭМЭЭХ ОРШВОЙ /Тод үсгээр/",
     text: "Зая бандида Намхайжамцын зохиосон тод үсгээр “Өнчин хөвгүүний сэцэлсэн шастир”-ыг муутуу цаасан дээр хар бэх, улаан шунхаар 30 мөрөөр бичсэн гар бичмэл эх юм."
 }
 const image3 = {
-    image: [media3, media31],
+    image: ["/Buyantkhan1.png", "/Buyantkhan2.png"],
     photoCount:2,
-    script: script3,
+    script: "/BuyantKhanHuvguuniiNamtar.png",
     title: "БУЯНТ ХАН ХӨВГҮҮНИЙ НАМТАР /Вагиндра үсгээр/",
     text: "Бурхан багшийн хураангуй намтрыг орос цаасан дээр хар бэхээр хорголжин бараар вагиндра үсгээр барлажээ. XX зууны эхээр буюу 1905 онд буриад лам, соён гэгээрүүлэгч Агваандорж (Агваан Доржиев) монгол, тод бичгүүдэд тулгуурлан зохиосон шинэ үсэг билээ."
 }
 const image4 = {
-    image: [media4, media41],
+    image: ["/Hevteedurvuljinbichig1.png", "/Hevteedurvuljinbichig2.png"],
     photoCount:2,
-    script: script4,
+    script: "/HevteeDurvuljinUseg.png",
     title: "ХЭВТЭЭ ДӨРВӨЛЖИН ҮСЭГ",
     text: "Материал: Хятад цаас Хэмжээ:50.5х9 см, бичвэрийн хэмжээ 46х7 см, 1 хуудас Хэвтээ дөрвөлжин үсгийг Өндөр гэгээн Занабазар 1686 онд дөрвөлжин бичигт тулгуурлан зохиожээ. Энэхүү нэг хуудас барын судар нь хэвтээ дөрвөлжин үсгийн цагаан толгой болно."
 }
 const image5 = {
-    image: [media5, media51],
+    image: ["/Galigusegorshvoi21.png", "/Galigusegorshvoi3.png"],
     photoCount:2,
-    script: script5,
+    script: "/GaligUsegOrshvoi.png",
     title: "ГАЛИГ ҮСЭГ ОРШВОЙ /Али гали үсгээр/",
     text: "Хэмжээ:32х8 см Али Гали галиг үсгийг энэтхэг, санскрит нэр томьёог галиглахын тулд Харчины Аюуш гүүш 1587 онд зохиожээ. Энэхүү цагаан толгойн гар бичмэл нь санскрит, төвөд үсгийг хэрхэн галиглахыг журамласан бөгөөд 1800-аад оны эхэн үед бичигдсэн байна."
 }
 const image6 = {
-    image: [media6, media61],
+    image: ["/Dorvoljinusgiindursgal1.png", "/Dorvoljinusgiindursgal2.png"],
     photoCount:2,
-    script: script6,
+    script: "/DurvuljinUsgiinDursgal.png",
     title: "ДӨРВӨЛЖИН ҮСГИЙН ДУРСГАЛ",
     text: "Хэмжээ:79х109 см Уг дурсгалыг дөрвөлжин үсгээр орос хатуу цаасан дээр төмөр үзгээр 'Монголын шинжлэх ухаан хөгжин бадрах болтугай' хэмээн бичсэн байдаг."
 }
