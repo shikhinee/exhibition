@@ -12,7 +12,7 @@ import media31 from "@/public/10burhnitangarag2.png";
 import media4 from "@/public/Enhamgalangiinjadamba1.png";
 import media41 from "@/public/Enhamgalangiinjadamba2.png";
 import media5 from "@/public/huilmalerdeniintovch1.png";
-import media51 from "@/public/huilmalerdeniintovch1.png";
+import media51 from "@/public/erdeniintovch2.jpeg";
 import media6 from "@/public/ulgeriindalaitomorhavtastai1.png";
 import media61 from "@/public/ulgeriindalaitomorhavtastai2.png";
 import media7 from "@/public/Shagjiindotzam1.png";

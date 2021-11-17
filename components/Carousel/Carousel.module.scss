@@ -47,6 +47,7 @@
     overflow: hidden;
     height: max-content;
     width: min-content;
+    display: flex;
     margin: 0rem 5rem;
     justify-content: center;
     align-items: center;
@@ -81,8 +82,14 @@
   .image{
     position: relative;
     margin-bottom: 1em;
-    width: 1000px;
+    width: 80rem;
     height: auto;
+    @include respondMax(lg){
+      width: 60rem;
+    }
+    @include respondMax(sm){
+      width: 40rem;
+    }
     img {
         object-fit: contain;
     }

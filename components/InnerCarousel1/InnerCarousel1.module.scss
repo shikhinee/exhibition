@@ -24,7 +24,21 @@
   .emblaViewport.is-dragging {
     cursor: grabbing;
   }
-  
+  .emblThumb {
+    position: relative;
+    @include themify(){
+      background-color: has(clr-bg);
+    }
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0;
+    margin-top: -12px;
+  }
+  .emblaContainerThumb {
+    cursor: default;
+    margin-left: -8px;
+  }
   .emblaContainer {
     display: flex;
     user-select: none;
@@ -41,6 +55,8 @@
     position: relative;
     @include respondMax(md){
       flex-direction: column;
+      align-items: center;
+      
     }
   }
   .slideInner {
@@ -82,8 +98,14 @@
   .image{
     position: relative;
     margin-bottom: 1em;
-    width: 1000px;
+    width: 80rem;
     height: auto;
+    @include respondMax(lg){
+      width: 65rem;
+    }
+    @include respondMax(sm){
+      width: 40rem;
+    }
     img {
         object-fit: contain;
     }

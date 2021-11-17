@@ -11,7 +11,13 @@ export const PrevButton = ({ enabled, onClick }) => (
 	  </svg>
 	</button>
   );
-  
+  export const DotButton = ({ selected, onClick }) => (
+	<button
+	  className={selected ? `${styles.emblaDot} ${styles.isSelected}` : `${styles.emblaDot}`}
+	  type="button"
+	  onClick={onClick}
+	/>
+  );
   export const NextButton = ({ enabled, onClick }) => (
 	<button
 	  className={styles.buttonNext}

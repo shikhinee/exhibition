@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import { useState, useEffect, useCallback, useRef } from "react";
 import useEmblaCarousel from "embla-carousel-react";
-import { PrevButton, NextButton } from "@/components/CarouselButton";
+import { PrevButton, NextButton, DotButton } from "@/components/CarouselButton";
 import { mediaByIndex, length, mediaPhotoCount, photoLength, photoByCount } from "@/components/Media";
 import CarouselThumb from "@/components/CarouselThumb"
 //import STORE from '@/store'
@@ -11,43 +11,44 @@ import styles from './InnerCarousel.module.scss'
 
 const InnerCarousel = ({ photos, setLockParentScroll, count }) => {
 
+	const [viewportRef, embla] = useEmblaCarousel({ skipSnaps: false });
+	const [prevBtnEnabled, setPrevBtnEnabled] = useState(false);
+	const [nextBtnEnabled, setNextBtnEnabled] = useState(false);
 	const [selectedIndex, setSelectedIndex] = useState(0);
-	const [mainViewportRef, embla] = useEmblaCarousel({ skipSnaps: false });
-	const [thumbViewportRef, emblaThumbs] = useEmblaCarousel({
-		containScroll: "keepSnaps",
-		selectedClass: "",
-		dragFree: true
-	});
-
-	const onThumbClick = useCallback(
-		(index) => {
-			if (!embla || !emblaThumbs) return;
-			if (emblaThumbs.clickAllowed()) embla.scrollTo(index);
-		},
-		[embla, emblaThumbs]
-	);
+	const [scrollSnaps, setScrollSnaps] = useState([]);
+	const scrollPrev = useCallback(() => embla && embla.scrollPrev(), [embla]);
+	const scrollNext = useCallback(() => embla && embla.scrollNext(), [embla]);
+	const scrollTo = useCallback((index) => embla && embla.scrollTo(index), [
+	  embla
+	]);
+  
 	const onSelect = useCallback(() => {
-		if (!embla || !emblaThumbs) return;
-		setSelectedIndex(embla.selectedScrollSnap());
-		emblaThumbs.scrollTo(embla.selectedScrollSnap());
-	}, [embla, emblaThumbs, setSelectedIndex]);
-
+	  if (!embla) return;
+	  setSelectedIndex(embla.selectedScrollSnap());
+	  setPrevBtnEnabled(embla.canScrollPrev());
+	  setNextBtnEnabled(embla.canScrollNext());
+	}, [embla, setSelectedIndex]);
+  
 	useEffect(() => {
-		if (!embla) return;
-		onSelect();
-		embla.on("select", onSelect);
-	}, [embla, onSelect]);
-
-	useEffect(() => {
-		if (!embla) return;
-		embla.on("pointerDown", () => setLockParentScroll(true));
-		embla.on("pointerUp", () => setLockParentScroll(false));
-	}, [embla, setLockParentScroll]);
+	  if (!embla) return;
+	  onSelect();
+	  setScrollSnaps(embla.scrollSnapList());
+	  embla.on("select", onSelect);
+	}, [embla, setScrollSnaps, onSelect]);
 
 	return (
-		<div className={styles.container}>
+		<>
+					<div className={styles.emblaDots}>
+        {scrollSnaps.map((_, index) => (
+          <DotButton
+            key={index}
+            selected={index === selectedIndex}
+            onClick={() => scrollTo(index)}
+          />
+        ))}
+      </div>
 			<div className={styles.embla}>
-				<div className={styles.emblaViewport} ref={mainViewportRef}>
+				<div className={styles.emblaViewport} ref={viewportRef}>
 					<div className={styles.emblaContainer}>
 						{photos.map((index) => (
 							<div className={styles.slide} key={index}>
@@ -67,22 +68,7 @@ const InnerCarousel = ({ photos, setLockParentScroll, count }) => {
 					</div>
 				</div>
 			</div>
-			<div className={styles.emblaThumb}>
-				<div className={styles.emblaViewport} ref={thumbViewportRef}>
-					<div className={`${styles.emblaContainer} ${styles.emblaContainerThumb}`}>
-						{photos.map((index) => (
-							<CarouselThumb
-								onClick={() => onThumbClick(index)}
-								selected={index === selectedIndex}
-								imgSrc={photoByCount(count, index)}
-								key={index}
-							/>
-						))}
-					</div>
-				</div>
-			</div>
-		</div>
-
+			</>
 	);
 };
 export default InnerCarousel;
