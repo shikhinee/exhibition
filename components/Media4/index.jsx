@@ -92,18 +92,10 @@ const image8 = {
     title: "СУДРЫН ХАВТАС /зүү ороож оёсон/",
     text: "Хэмжээ: 21.2х5.1 см, жин 25 гр, 1 ширхэг Бор шар торгон дээр очир болон хээ угалзыг зүү ороон оёж, шар торгоор эмжсэн, цэнхэр торгон дотортой бүтээл юм."
 }
-const image9 = {
-    image: [media9, media91],
-    photoCount:2,
-    script: script9,
-    title: "СУДРЫН ХАВТАС /оёмол/",
-    text: "Хэмжээ: 23.3х9.3 см, жин 20 гр, 1 ширхэг Найман тахилын шүхэр, хос загас, бумба, бадамлянхуа цэцгийг хатгаж оёсон, эрээн тууз болон хөх эрээн даавуугаар эмжсэн бүтээл юм."
-}
-
-export const media = [image1, image2, image3, image4, image5, image6, image7, image8, image9];
+export const media = [image1, image2, image3, image4, image5, image6, image7, image8 ];
 export const mediablabla = [image1.photoCount, image2.photoCount, 
     image3.photoCount, image4.photoCount, image5.photoCount, 
-    image6.photoCount, image7.photoCount, image8.photoCount, image9.photoCount];
+    image6.photoCount, image7.photoCount, image8.photoCount];
 
 
 

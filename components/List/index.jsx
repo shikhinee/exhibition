@@ -2,6 +2,11 @@
 import Image from 'next/image'
 import Link from 'next/link'
 //import STORE from '@/store'
+import cover1 from '@/public/Cover1.png'
+import cover2 from '@/public/Cover2.png'
+import cover3 from '@/public/Cover3.png'
+import cover4 from '@/public/Cover4.png'
+import cover5 from '@/public/Cover5.png'
 
 //Styles must be imported here
 import styles from './List.module.scss'
@@ -16,7 +21,7 @@ const List = (props) => {
                             <div className={styles.img}>
                                 <Image
                                     alt="librarycover"
-                                    src="/Cover1.png"
+                                    src={cover1}
                                     layout="fill"
                                     objectFit="cover"
                                     quality={100}
@@ -32,7 +37,7 @@ const List = (props) => {
                         <div className={styles.img}>
                             <Image
                                 alt="librarycover"
-                                src="/Cover2.png"
+                                src={cover2}
                                 layout="fill"
                                 objectFit="cover"
                                 quality={100}
@@ -47,7 +52,7 @@ const List = (props) => {
                         <div className={styles.img}>
                             <Image
                                 alt="librarycover"
-                                src="/Cover3.png"
+                                src={cover3}
                                 layout="fill"
                                 objectFit="cover"
                                 quality={100}
@@ -64,7 +69,7 @@ const List = (props) => {
                         <div className={styles.img}>
                             <Image
                                 alt="librarycover"
-                                src="/Cover4.png"
+                                src={cover4}
                                 layout="fill"
                                 objectFit="cover"
                                 quality={100}
@@ -79,7 +84,7 @@ const List = (props) => {
                         <div className={styles.img}>
                             <Image
                                 alt="librarycover"
-                                src="/Cover5.png"
+                                src={cover5}
                                 layout="fill"
                                 objectFit="cover"
                                 quality={100}

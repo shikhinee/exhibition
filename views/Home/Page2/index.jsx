@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Carousel1 from '@/components/Carousel1'
 import Titles from '@/components/Titles'
 //import COMPOSITES from '@/composites'
-
+import cover2 from '@/public/Cover2.png'
 //import COMPONENT from '@/components'
 
 import styles from './Exhibition2.module.scss'
@@ -23,7 +23,7 @@ const Page2 = (props) => {
 					<div className={styles.coverimg}>
 						<Image
 							alt='cover'
-							src='/Cover2.png'
+							src={cover2}
 							layout='fill'
 							objectFit='cover'
 							quality={100}
@@ -35,25 +35,17 @@ const Page2 = (props) => {
 				<div className={styles.containerDescription}>
 					<div className={styles.text}>
 						<h2>II.  ЭРДЭНЭСЭЭР УРЛАСАН БҮТЭЭЛИЙН ДЭЭЖИС</h2>
-						<p>1. Есөн эрдэнийн Ганжуур</p>
-						<p>2. Есөн эрдэнийн Жадамба</p>
-						<p>3. Алтан Жадамба </p>
-						<p>4. Алтан Жадамба /зүмбэртэй/</p>
-						<p>5. Мөнгөн Сандуйн жүд</p>
-						<p>6. Жадамба /найман тахилтай/</p>
-						<p>7. Хутагт билгийн чанад хязгаараа (хязгаарт) хүрсэн найман мянгат оршвой /Жадамба/</p>
-						<p>8. Ц. Бавуудорж &apos;Монголын их амар амгалан&apos;</p>
-						<p>9. Хутагт очироор огтлогч билгийн чанад хязгаараа (хязгаарт) хүрсэн их хөлгөн судар оршвой</p>
+						<p>Дэлхий дахинд үнэт материалаар ном бүтээж байсан түүх маш олон бий. Гэхдээ тэдгээр нь тухай тухайн улсад ганц хоёр тоотой бүтээгдсэн байх боловч Монголчууд шиг олон төрлийн эрдэнэсээр олон тооны ном бүтээж байсан түүх бараг үгүй билээ. Энэ нь бидний өвөг дээдэс хэрхэн номыг эрхэмлэн дээдэлж байсны баталгаа болно. Бид өөрсдийн биедээ хөдсөн дээл өмсөвч судар номоо торгоор баринтаглан хоймортоо залдаг уламжлалтай ард түмэн билээ.</p>
 					</div>
 					<div className={styles.imgContainer}>
-						<div className={styles.img}>
-							<Image
-								alt='cover'
-								src={Titles[1].image}
-								layout='fill'
-								objectFit='contain'
-							/>
-						</div>
+					<div className={styles.scriptImg}>
+						<Image
+							alt='cover'
+							src={Titles[0].image}
+							layout='responsive'
+							objectFit='contain'
+						/>
+					</div>
 					</div>
 				</div>
 				<Carousel1 slides={slides} photos={photos}/>

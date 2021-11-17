@@ -109,6 +109,9 @@
   p {
     margin: 0 2rem;
   }
+  @include respondMax(md){
+    margin: 0rem;
+  }
 }
 .scriptWidth {
   display: flex;
@@ -129,9 +132,11 @@
     width: 100%;
   }
   p{
+    text-align: justify;
     margin: 2rem;
   }
   h4{
+    text-align: center;
     margin: 2rem;
   }
 }

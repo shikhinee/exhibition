@@ -4,15 +4,15 @@
 
 
 import media1 from "@/public/Soyombousgiintsagaantolgoi1.png";
-import media11 from "@/public/Soyombousgiintsagaantolgoi1.png";
+import media11 from "@/public/Soyombousgiintsagaantolgoi2.png";
 import media2 from "@/public/SuutBogdChingisHaanituujorshvoi(todusgeer)1.png";
 import media21 from "@/public/SuutBogdChingisHaanituujorshvoi(todusgeer)2.png";
 import media3 from "@/public/Buyantkhan1.png";
-import media31 from "@/public/Chingiseesehlenhalhiin2.png";
+import media31 from "@/public/Buyantkhan2.png";
 import media4 from "@/public/Hevteedurvuljinbichig1.png";
 import media41 from "@/public/Hevteedurvuljinbichig2.png";
 import media5 from "@/public/Galigusegorshvoi21.png";
-import media51 from "@/public/Galigusegorshvoi22.png";
+import media51 from "@/public/Galigusegorshvoi3.png";
 import media6 from "@/public/Dorvoljinusgiindursgal1.png";
 import media61 from "@/public/Dorvoljinusgiindursgal2.png";
 

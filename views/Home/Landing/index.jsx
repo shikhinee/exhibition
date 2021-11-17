@@ -19,6 +19,7 @@ const Landing = (props) => {
                     layout='fill'
                     objectFit='cover'
                     quality={100}
+                    priority
                 /> 
             </div>
             <div className={styles.shadow}>

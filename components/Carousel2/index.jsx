@@ -63,20 +63,16 @@ const Carousel2 = ({ slides }, props) => {
 
 
 							<div className={styles.slideOuter}>
-								<div className={styles.text}>
-									<div className={styles.textDesc}>
-										<h4>{mediaByIndex(index).title}</h4>
-										<p>{mediaByIndex(index).text}</p>
-									</div>
-									<div className={styles.scriptWidth}>
-										<div className={styles.scriptImg}>
-											<Image
-												layout='fill'
-												src={mediaByIndex(index).script}
-												alt="A cool cat."
-											/>
-										</div>
-									</div>
+								<div className={styles.textDesc}>
+									<h4>{mediaByIndex(index).title}</h4>
+									<p>{mediaByIndex(index).text}</p>
+								</div>
+								<div className={styles.scriptImg}>
+									<Image
+										layout='responsive'
+										src={mediaByIndex(index).script}
+										alt="A cool cat."
+									/>
 								</div>
 							</div>
 						</div>

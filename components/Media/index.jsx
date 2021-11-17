@@ -110,10 +110,10 @@ const image10 = {
     text: "Хэмжээ: 12.5x18.2 см Монгол Улсын XVIII он буюу 1928 онд Ардыг гэгээрүүлэх яамнаас Улаанбаатар хот дахь монгол үсгийн хэвлэлийн хороонд хэвлэсэн хорголжин барын анхны хэвлэл гэдгээрээ онцлог."
 }
 
-export const media = [image1, image2, image3, image4, image5, image6, image7, image8, image9];
+export const media = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10];
 export const mediablabla = [image1.photoCount, image2.photoCount, 
     image3.photoCount, image4.photoCount, image5.photoCount, 
-    image6.photoCount, image7.photoCount, image8.photoCount, image9.photoCount];
+    image6.photoCount, image7.photoCount, image8.photoCount, image9.photoCount, image10.photoCount];
 export const mediaByIndex = index => media[index % media.length];
 export const mediaPhotoCount = index => media[index % media.length].photoCount;
 export const length = media.length;

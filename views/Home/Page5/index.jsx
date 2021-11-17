@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Carousel4 from '@/components/Carousel4'
 import Titles from '@/components/Titles'
 //import COMPOSITES from '@/composites'
-
+import cover5 from '@/public/Cover5.png'
 //import COMPONENT from '@/components'
 
 import styles from './Exhibition5.module.scss'
@@ -14,7 +14,7 @@ const Page5 = (props) => {
 		// console.log(selectedIndex)
 		return Array.from(Array(2).keys());
 	}
-	const SLIDE_COUNT = 9;
+	const SLIDE_COUNT = 8;
 	const slides = Array.from(Array(SLIDE_COUNT).keys());
 	return (
 		<main className={styles.container}>
@@ -22,7 +22,7 @@ const Page5 = (props) => {
 				<div className={styles.coverimg}>
 					<Image
 						alt='cover'
-						src='/Cover5.png'
+						src={cover5}
 						layout='fill'
 						objectFit='cover'
 						quality={100}
@@ -34,22 +34,14 @@ const Page5 = (props) => {
 			<div className={styles.containerDescription}>
 				<div className={styles.text}>
 					<h2>УЛАМЖЛАЛТ БИЧГИЙН ХЭРЭГЛЭГДЭХҮҮН</h2>
-					<p>1. Модон шогол</p>
-					<p>2. Эсгий шогол</p>
-					<p>3. Тугалын арьсан баринтаг</p>
-					<p>4. Үнсэн самбар, хулсан үзэг</p>
-					<p>5. Олсон боолт</p>
-					<p>6. Судрын хавтас /бурхантай/</p>
-					<p>7. Хулс, зэгсэн хавтас</p>
-					<p>8. Судрын хавтас /зүү ороож оёсон/</p>
-					<p>9. Судрын хавтас /оёмол/</p>
+					<p>Монголчууд ном бүтээх аргыг Төвөдөөс сурсан гэж хэлж болно. Гэхдээ илүү ихээр нүүдэлчин соёл иргэншлийн нөлөө туссан байдгийг анзаарч болно. Нэг газраас нөгөө газар нүүдэллэн явагч ард түмэн мал аж ахуйн гаралтай бүтээгдэхүүнээр аяны дөрөө даах бичгийн хэрэглэгдэхүүн урлаж байжээ. Мөн хулс, даавуу, модоор төрөл бүрийн хэрэглэгдэхүүн урлаж ном судар бүтээж байсан арвин баялаг уламжлалтай билээ. Тэр бүхний дээжээс та бүхэндээ толилуулж байна.</p>
 				</div>
 				<div className={styles.imgContainer}>
-					<div className={styles.img}>
+				<div className={styles.scriptImg}>
 						<Image
 							alt='cover'
-							src={Titles[4].image}
-							layout='fill'
+							src={Titles[0].image}
+							layout='responsive'
 							objectFit='contain'
 						/>
 					</div>

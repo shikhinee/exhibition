@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Carousel3 from '@/components/Carousel3'
 import Titles from '@/components/Titles'
 //import COMPOSITES from '@/composites'
-
+import cover4 from '@/public/Cover4.png'
 //import COMPONENT from '@/components'
 
 import styles from './Exhibition4.module.scss'
@@ -22,7 +22,7 @@ const Page4 = (props) => {
 				<div className={styles.coverimg}>
 					<Image
 						alt='cover'
-						src='/Cover4.png'
+						src={cover4}
 						layout='fill'
 						objectFit='cover'
 						quality={100}
@@ -34,19 +34,14 @@ const Page4 = (props) => {
 			<div className={styles.containerDescription}>
 				<div className={styles.text}>
 					<h2>IV. МОНГОЛЧУУДЫН БИЧИГ ҮСГИЙН ДУРСГАЛ</h2>
-					<p>1. Соёмбо үсгийн цагаан толгой</p>
-					<p>2. Суут Богд Чингис хааны тууж оршвой /тод үсгээр/</p>
-					<p>3. Буянт хан хөвгүүний намтар /вагиндра үсгээр/</p>
-					<p>4. Хэвтээ дөрвөлжин үсэг</p>
-					<p>5. Галиг үсэг оршвой /али гали үсгээр/ </p>
-					<p>6. Дөрвөлжин үсгийн дурсга</p>
+					<p>Элдэв магтаалын үг үл илүүдэх бахдам түүх соёлын минь гэрч бол манай өвөг дээдсийн бүтээж хэрэглэж байсан олон төрлийн бичиг үсэг болно. Монголчуудын бичиг үсгээс Юань гүрний үед хамаарах дөрвөлжин бичгийн дурсгал өнөөгийн бидэнд маш бага үлдэж хоцорчээ. Гэхдээ бидний өвөг дээдсийн бичиг үсгийн нотолгоо болсон баримтуудыг МУҮНС нь сан хөмрөгтөө хадгалж байдаг.  Мөн 16-р зуунд Харчин Аюуш Гүүш Али-Гали буюу гадаад үгийг галиглах журмыг зохиосноор Монгол хэлт орчуулга хэл зүйн хувьд цэгцэрч байсан түүхтэй. Энэхүү баримт бүхнийг та бүхэндээ толилуулж байна.</p>
 				</div>
 				<div className={styles.imgContainer}>
-					<div className={styles.img}>
+				<div className={styles.scriptImg}>
 						<Image
 							alt='cover'
-							src={Titles[3].image}
-							layout='fill'
+							src={Titles[0].image}
+							layout='responsive'
 							objectFit='contain'
 						/>
 					</div>

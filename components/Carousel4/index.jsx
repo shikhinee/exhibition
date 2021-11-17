@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { useState, useEffect, useCallback, useRef } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { PrevButton, NextButton } from "@/components/CarouselButton";
-import { mediaByIndex, length, mediablabla, photoLength } from "@/components/Media";
+import { mediaByIndex, length, mediablabla, photoLength } from "@/components/Media4";
 import { useNestedEmblaCarousel } from "@/components/NestedCarousel";
 import CarouselThumb from "@/components/CarouselThumb"
 import InnerCarousel4 from "@/components/InnerCarousel4"
@@ -62,20 +62,16 @@ const Carousel4 = ({ slides }, props) => {
 
 
 							<div className={styles.slideOuter}>
-								<div className={styles.text}>
-									<div className={styles.textDesc}>
-										<h4>{mediaByIndex(index).title}</h4>
-										<p>{mediaByIndex(index).text}</p>
-									</div>
-									<div className={styles.scriptWidth}>
-										<div className={styles.scriptImg}>
-											<Image
-												layout='fill'
-												src={mediaByIndex(index).script}
-												alt="A cool cat."
-											/>
-										</div>
-									</div>
+								<div className={styles.textDesc}>
+									<h4>{mediaByIndex(index).title}</h4>
+									<p>{mediaByIndex(index).text}</p>
+								</div>
+								<div className={styles.scriptImg}>
+									<Image
+										layout='responsive'
+										src={mediaByIndex(index).script}
+										alt="A cool cat."
+									/>
 								</div>
 							</div>
 						</div>

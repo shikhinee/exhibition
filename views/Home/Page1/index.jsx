@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Carousel from '@/components/Carousel'
 import Titles from '@/components/Titles'
 //import COMPOSITES from '@/composites'
-
+import cover1 from '@/public/Cover1.png'
 //import COMPONENT from '@/components'
 import styles from './Exhibition1.module.scss'
 import {mediablabla} from '@/components/Media'
@@ -24,7 +24,7 @@ const Page1 = (props) => {
 				<div className={styles.coverimg}>
 					<Image
 						alt='cover'
-						src='/Cover1.png'
+						src={cover1}
 						layout='fill'
 						objectFit='cover'
 						quality={100}
@@ -36,23 +36,14 @@ const Page1 = (props) => {
 			<div className={styles.containerDescription}>
 				<div className={styles.text}>
 					<h2>I. СУРВАЛЖ БИЧГИЙН ДЭЭЖИС</h2>
-					<p>1. Жалзэ тэмбан Ганжуур</p>
-					<p>2. Лувсанданзан &apos;Эртний хаадын үндэслэсэн төр ёсны зохиолыг товчлон хураасан алтан товч хэмээх оршвой&apos;</p>
-					<p>3. Чингисээс эхлэн Халхын бүх олон ноёдын угсаа залгамжилсан хүрдэн зургийн бичмэл</p>
-					<p>4. Асрагч нэртийн түүх</p>
-					<p>5. Эрдэнийн товч /Өргөө эх/</p>
-					<p>6. Чингисийн дурсгалын түүвэр</p>
-					<p>7. Ж. Цэвээн &apos;Монгол улсын түүх&apos;</p>
-					<p>8. &apos;Мэргэд гарахын орон&apos; толь бичгийн гар бичмэл</p>
-					<p>9. Богдын өргөмжлөл</p>
-					<p>10. Оюун түлхүүр</p>
+					<p>Монгол Улсын Үндэсний Номын Санд түүхийн чухал баримт болох судар бичгүүд маш олон тоотой хадгалагддаг бөгөөд тэдгээрийн ихэнх нь Монгол улсад цор ганц хувиар хадгалагдаж буй гар бичмэлүүд байдаг. Мөн тэдгээр зохиол бүтээлийн ихэнхи нь монголын түүх болон буддын шашин, гүн ухааны хөлгөн судруудын дурсгал байдаг юм. Монголчуудын бүтээсэн сурвалж бичгүүд  хүн төрөлхтний оюуны соёлд жинтэй хувь нэмэр оруулдаг билээ. </p>
 				</div>
 				<div className={styles.imgContainer}>
-					<div className={styles.img}>
+					<div className={styles.scriptImg}>
 						<Image
 							alt='cover'
 							src={Titles[0].image}
-							layout='fill'
+							layout='responsive'
 							objectFit='contain'
 						/>
 					</div>
