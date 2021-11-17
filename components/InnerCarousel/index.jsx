@@ -55,7 +55,7 @@ const InnerCarousel = ({ photos, setLockParentScroll, count }) => {
 									<div className={styles.slideImg}>
 										<div className={styles.image}>
 											<Image
-												layout='intrinsic'
+												layout='responsive'
 												src={photoByCount(count, index)}
 												alt="A cool cat."
 											/>

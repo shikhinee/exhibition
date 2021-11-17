@@ -105,14 +105,14 @@
 .slideOuter {
   display: flex;
   flex-direction: column;
-  width: min-content;
+  width: 50rem;
   height: auto;
   justify-content: flex-start;
   align-items: center;
   padding: 2rem;
   @include respondMax(md){
     width: 100%;
-    margin: 0;
+    padding: 0;
   }
 }
 .navButton {
