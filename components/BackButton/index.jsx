@@ -4,6 +4,7 @@ import Link from "next/link";
 //import STORE from '@/store'
 import styled from "styled-components";
 import { ArrowBack } from "@styled-icons/boxicons-regular";
+import Logo from "@/components/Logo";
 import styles from './BackButton.module.scss'
 const StyledBack = styled(ArrowBack)`
   width: 50px;
@@ -19,7 +20,7 @@ const BackButton = (props) => {
 	 return (
 		 <>{router.pathname !== "/" ? <Link href="/"><div className={styles.container}>
 		 <StyledBack/><span>Буцах</span>
-	 </div></Link> : <div></div> }
+	 </div></Link> : <Logo/> }
 		</>
 	)
 };
