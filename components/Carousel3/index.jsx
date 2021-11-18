@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useState, useEffect, useCallback, useRef } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { PrevButton, NextButton } from "@/components/CarouselButton";
-import { media } from "@/components/Media";
+import { media } from "@/components/Media3";
 import { useNestedEmblaCarousel } from "@/components/NestedCarousel";
 import InnerCarousel3 from "@/components/InnerCarousel3";
 //import STORE from '@/store'
