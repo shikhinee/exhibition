@@ -13,3 +13,27 @@
   }
   z-index: -1;
 }
+.menuContainer {
+  display: flex;
+  flex-direction: column;
+  p {
+    margin: 1rem;
+    margin-left: 3rem;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .linked {
+    margin-bottom: 2rem;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .active {
+    user-select: none;
+    text-decoration: underline;
+    margin-bottom: 2rem;
+  }
+}

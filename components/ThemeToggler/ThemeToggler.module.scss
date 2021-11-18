@@ -1,3 +1,10 @@
+.themeChanger {
+    display: flex;
+    align-items: center;
+    h2 {
+        margin-right: 1rem;
+    }
+}
 .themeChanger .wrapper {
     background-color: #efefef;
     border: 0.1rem solid #efefef;

@@ -10,6 +10,7 @@ const ThemeToggler = (props) => {
 
   return (
     <div className={styles.themeChanger} onClick={() => {props.handler(); toggleDarkTheme()}}>
+      <h2>Theme</h2>
       <div className={
             props.isChanged
               ? `${styles.wrapper} ${styles.animationWrapper}`
