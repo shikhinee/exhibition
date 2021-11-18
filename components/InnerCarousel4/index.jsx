@@ -64,7 +64,7 @@ const InnerCarousel4 = ({ photos, setLockParentScroll, count }) => {
 													width="100%"
 													height="100%"
 													src={photo}
-													alt="A cool cat."
+													alt="Poor Internet Connection."
 												/>
 											</div>
 										</div>

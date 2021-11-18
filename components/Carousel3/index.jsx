@@ -76,7 +76,7 @@ const Carousel3 = ({ slides }, props) => {
                     height="100%"
                     layout="responsive"
                     src={media[index].script}
-                    alt="A cool cat."
+                    alt="Poor Internet Connection."
                   />
                 </div>
               </div>
