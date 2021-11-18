@@ -22,7 +22,7 @@ const Page5 = (props) => {
 				<div className={styles.coverimg}>
 					<Image
 						alt='cover'
-						src={cover5}
+						src='/Cover5.png'
 						layout='fill'
 						objectFit='cover'
 						quality={100}
@@ -40,7 +40,7 @@ const Page5 = (props) => {
 				<div className={styles.scriptImg}>
 						<Image
 							alt='cover'
-							src={Titles[0].image}
+							src={Titles[4].image}
 							layout='responsive'
 							objectFit='contain'
 						/>

@@ -64,6 +64,10 @@ const Carousel4 = ({ slides }, props) => {
               <div className={styles.slideOuter}>
                 <div className={styles.textDesc}>
                   <h4>{media[index].title}</h4>
+                  <p>{media[index].text1}</p>
+                  <p>{media[index].text2}</p>
+                  <p>{media[index].text3}</p>
+                  <p>{media[index].text4}</p>
                   <p>{media[index].text}</p>
                 </div>
                 <div className={styles.scriptImg}>

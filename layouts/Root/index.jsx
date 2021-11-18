@@ -18,7 +18,6 @@ const RootLayout = ({children, ...props}) => {
 		 <div className={styles.container}>
 			 <Navbar />
 			{children}
-			<Footer />
 		</div>
 	)
 };

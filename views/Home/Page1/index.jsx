@@ -4,7 +4,6 @@ import Image from 'next/image'
 import Carousel from '@/components/Carousel'
 import Titles from '@/components/Titles'
 //import COMPOSITES from '@/composites'
-import cover1 from '@/public/Cover1.png'
 //import COMPONENT from '@/components'
 import styles from './Exhibition1.module.scss'
 import {mediablabla} from '@/components/Media'
@@ -24,7 +23,7 @@ const Page1 = (props) => {
 				<div className={styles.coverimg}>
 					<Image
 						alt='cover'
-						src={cover1}
+						src='/Cover1.png'
 						layout='fill'
 						objectFit='cover'
 						quality={100}

@@ -1,0 +1,10 @@
+@import 'global';
+
+.container {
+    width: 12rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
