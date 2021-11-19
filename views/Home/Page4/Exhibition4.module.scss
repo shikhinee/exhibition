@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     @include themify(){
-        background-color: has(bg);
+        background-color: has(clr-bg);
     }
 }
 .containerDescription {
@@ -15,10 +15,14 @@
     max-width: has(md);
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
+    @include themify(){
+        background-color: has(clr-bg);
+    }
     margin-top: 2rem;
     p {
-        color: #0b0b0b;
+        @include themify(){
+            color: has(clr-bg-inverse);
+        }
         padding: 2rem;
         text-align: justify;
     }
