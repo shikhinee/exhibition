@@ -26,6 +26,7 @@ const Page5 = (props) => {
 						layout='fill'
 						objectFit='cover'
 						quality={100}
+						priority
 					/>
 				</div>
 				<div className={styles.shadow}>
@@ -43,6 +44,7 @@ const Page5 = (props) => {
 							src={Titles[4].image}
 							layout='responsive'
 							objectFit='contain'
+							priority
 						/>
 					</div>
 				</div>

@@ -17,7 +17,7 @@ const CarouselThumb = ({ selected, onClick, imgSrc }) => {
       type="button"
     >
       <div className={styles.image}>
-      <Image className={styles.slideThumbnail} src={imgSrc} alt="A cool cat." />
+      <Image className={styles.slideThumbnail} src={imgSrc} priority alt="A cool cat." />
       <div>Image</div>
       </div>
     </button>

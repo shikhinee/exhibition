@@ -65,6 +65,7 @@ const InnerCarousel1 = ({ photos, setLockParentScroll, count }) => {
 													height="100%"
 													src={photo}
 													alt="Poor Internet Connection."
+													priority
 												/>
 											</div>
 										</div>

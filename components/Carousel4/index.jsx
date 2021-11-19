@@ -77,6 +77,7 @@ const Carousel4 = ({ slides }, props) => {
                     layout="responsive"
                     src={media[index].script}
                     alt="Poor Internet Connection."
+                    priority
                   />
                 </div>
               </div>
